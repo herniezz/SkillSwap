@@ -1,0 +1,76 @@
+{
+  "Technology": [
+    "coding", "software", "algorithms", "development", "problem-solving", "logic",
+    "frontend", "web development", "dynamic websites", "scripting", "browser-based", "interactive",
+    "backend", "data science", "machine learning", "AI", "automation", "object-oriented",
+    "enterprise", "cross-platform", "scalability", "secure", "multi-threading",
+    "performance", "systems programming", "games", "hardware control", "complexity",
+    "web applications", "conventions", "elegance", "frameworks", "simplicity",
+    "security", "network protection", "data integrity", "firewalls", "encryption", "threat detection",
+    "intrusion detection", "VPN", "data protection", "risk management",
+    "penetration testing", "vulnerability", "system breaches", "countermeasures", "certification",
+    "code review", "vulnerabilities", "secure coding", "OWASP", "best practices",
+    "forensics", "incident management", "threat mitigation", "protocols", "analysis",
+    "cloud architecture", "compliance", "identity management", "virtualization", "security controls",
+    "circuit design", "components", "systems", "microcontrollers", "innovation",
+    "schematics", "PCB", "simulation", "troubleshooting", "prototyping",
+    "embedded systems", "Arduino", "Raspberry Pi", "IoT",
+    "analog", "digital", "filters", "modulation", "data analysis", "waveforms",
+    "sensors", "actuators", "control systems"
+  ],
+  "Data Science": [
+    "analytics", "big data", "statistics", "data visualization", "insights",
+    "algorithms", "model training", "neural networks", "predictive analytics", "data mining",
+    "charts", "graphs", "dashboards", "insight communication", "tools", "design",
+    "probability", "data interpretation", "hypothesis testing", "surveys", "data cleaning"
+  ],
+  "Culinary": [
+    "kitchen", "recipes", "healthy diet", "techniques", "nutrition", "flavors",
+    "vegan", "plant-based", "meat-free", "environmental",
+    "balanced meals", "low calorie", "high protein", "fiber", "wellness", "energy-boosting",
+    "oven", "desserts", "breads", "pastry", "precision",
+    "outdoor cooking", "charcoal", "meats", "vegetables",
+    "stews", "crockpot", "convenience", "low heat", "meal prep",
+    "aesthetics", "plating", "color balance", "texture", "garnishing", "visual appeal",
+    "decorative", "herbs", "edible flowers", "finishing touch", "enhancement", "flavor contrast",
+    "layering", "arrangement", "color contrast", "textural harmony", "spatial balance",
+    "photography", "commercial", "social media", "props", "lighting", "composition"
+  ],
+  "Art": [
+    "visual arts", "color theory", "creativity", "expression", "mediums", "textures",
+    "transparency", "lightweight", "blending", "paper-based", "soft edges",
+    "rich colors", "drying time", "canvas", "depth", "traditional",
+    "fast drying", "versatile", "color mixing", "experimentation",
+    "technology", "software", "graphic design", "layers", "virtual canvas",
+    "3D art", "material manipulation", "shape", "form",
+    "molding", "firing", "glazing", "hands-on",
+    "chisel", "hammer", "stone", "permanence", "detail-oriented",
+    "welding", "forging", "industrial", "durability", "design",
+    "handcrafted", "craftsmanship", "natural materials"
+  ],
+  "Health and Wellness": [
+    "fitness", "mental health", "nutrition", "mindfulness", "well-being",
+    "meditation", "stress relief", "exercise", "physical health", "longevity",
+    "yoga", "breathing", "flexibility", "strength", "balance",
+    "dieting", "meal planning", "vitamins", "hydration", "energy levels",
+    "sleep hygiene", "relaxation", "digital detox", "self-care", "work-life balance"
+  ],
+  "Business and Finance": [
+    "entrepreneurship", "investment", "marketing", "management", "economics",
+    "startups", "branding", "financial planning", "accounting", "risk management",
+    "customer service", "leadership", "strategy", "negotiation", "sales",
+    "budgeting", "taxation", "real estate", "market analysis", "stocks"
+  ],
+  "Education": [
+    "learning", "teaching", "curriculum", "educational technology", "pedagogy",
+    "online learning", "student engagement", "assessment", "critical thinking", "creativity",
+    "STEM", "arts education", "literacy", "science education", "problem-solving",
+    "classroom management", "special education", "cultural competence", "digital literacy", "life skills"
+  ],
+  "Environment and Sustainability": [
+    "renewable energy", "recycling", "climate change", "conservation", "green technology",
+    "sustainable agriculture", "biodiversity", "pollution", "ecosystems", "organic",
+    "waste reduction", "water conservation", "carbon footprint", "green buildings", "solar energy",
+    "wind power", "environmental policies", "wildlife protection", "ecology", "urban sustainability"
+  ]
+}
