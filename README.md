@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+# SkillSwap - Skill Exchange App 👀🔁
+
+## Description
+SkillSwap is an app that allows users to exchange skills such as language learning, programming, cooking, and more. Users can create profiles, add skills they want to share, and search for others offering specific skills.
+
+## Features
+- User profiles with skills and contact information
+- Quiz to suggest skills based on user interests
+- Search functionality to find users by skill
+- Dynamic profile pages
+
+=======
+>>>>>>> recovered-json
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -34,3 +50,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<<<<<<< HEAD
+=======
+>>>>>>> cbe5007 (Initial commit for SkillSwap project)
+>>>>>>> recovered-json

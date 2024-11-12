@@ -1,0 +1,302 @@
+{
+  "Technology": [
+    {
+      "id": 1,
+      "name": "Programming",
+      "tags": ["coding", "software", "algorithms", "development", "problem-solving", "logic"],
+      "children": [
+        {
+          "id": 2,
+          "name": "JavaScript",
+          "parent": "Programming",
+          "tags": ["frontend", "web development", "dynamic websites", "scripting", "browser-based", "interactive"],
+          "children": []
+        },
+        {
+          "id": 3,
+          "name": "Python",
+          "parent": "Programming",
+          "tags": ["backend", "data science", "machine learning", "AI", "automation", "scripting"],
+          "children": []
+        },
+        {
+          "id": 4,
+          "name": "Java",
+          "parent": "Programming",
+          "tags": ["enterprise", "cross-platform", "object-oriented", "scalability", "secure", "multi-threading"],
+          "children": []
+        },
+        {
+          "id": 5,
+          "name": "C++",
+          "parent": "Programming",
+          "tags": ["performance", "systems programming", "object-oriented", "games", "hardware control", "complexity"],
+          "children": []
+        },
+        {
+          "id": 6,
+          "name": "Ruby",
+          "parent": "Programming",
+          "tags": ["web applications", "conventions", "elegance", "frameworks", "dynamic", "simplicity"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Cybersecurity",
+      "tags": ["security", "network protection", "data integrity", "firewalls", "encryption", "threat detection"],
+      "children": [
+        {
+          "id": 8,
+          "name": "Network Security",
+          "parent": "Cybersecurity",
+          "tags": ["firewalls", "intrusion detection", "VPN", "encryption", "data protection", "risk management"],
+          "children": []
+        },
+        {
+          "id": 9,
+          "name": "Ethical Hacking",
+          "parent": "Cybersecurity",
+          "tags": ["penetration testing", "vulnerability", "system breaches", "countermeasures", "certification", "white-hat"],
+          "children": []
+        },
+        {
+          "id": 10,
+          "name": "Application Security",
+          "parent": "Cybersecurity",
+          "tags": ["code review", "security testing", "vulnerabilities", "secure coding", "OWASP", "best practices"],
+          "children": []
+        },
+        {
+          "id": 11,
+          "name": "Incident Response",
+          "parent": "Cybersecurity",
+          "tags": ["forensics", "incident management", "threat mitigation", "protocols", "analysis", "preparation"],
+          "children": []
+        },
+        {
+          "id": 12,
+          "name": "Cloud Security",
+          "parent": "Cybersecurity",
+          "tags": ["cloud architecture", "data protection", "compliance", "identity management", "virtualization", "security controls"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Electronics",
+      "tags": ["circuit design", "components", "systems", "microcontrollers", "innovation", "technology"],
+      "children": [
+        {
+          "id": 14,
+          "name": "Circuit Design",
+          "parent": "Electronics",
+          "tags": ["schematics", "PCB", "components", "simulation", "troubleshooting", "prototyping"],
+          "children": []
+        },
+        {
+          "id": 15,
+          "name": "Microcontrollers",
+          "parent": "Electronics",
+          "tags": ["embedded systems", "Arduino", "Raspberry Pi", "programming", "IoT", "automation"],
+          "children": []
+        },
+        {
+          "id": 16,
+          "name": "Signal Processing",
+          "parent": "Electronics",
+          "tags": ["analog", "digital", "filters", "modulation", "data analysis", "waveforms"],
+          "children": []
+        },
+        {
+          "id": 17,
+          "name": "Robotics",
+          "parent": "Electronics",
+          "tags": ["automation", "sensors", "actuators", "control systems", "programming", "AI"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Data Science",
+      "tags": ["analytics", "big data", "machine learning", "statistics", "data visualization", "insights"],
+      "children": [
+        {
+          "id": 19,
+          "name": "Machine Learning",
+          "parent": "Data Science",
+          "tags": ["algorithms", "model training", "neural networks", "predictive analytics", "data mining", "AI"],
+          "children": []
+        },
+        {
+          "id": 20,
+          "name": "Data Visualization",
+          "parent": "Data Science",
+          "tags": ["charts", "graphs", "dashboards", "insight communication", "tools", "design"],
+          "children": []
+        },
+        {
+          "id": 21,
+          "name": "Statistical Analysis",
+          "parent": "Data Science",
+          "tags": ["probability", "data interpretation", "hypothesis testing", "surveys", "data cleaning", "modeling"],
+          "children": []
+        }
+      ]
+    }
+  ],
+  "Culinary": [
+    {
+      "id": 22,
+      "name": "Cooking",
+      "tags": ["kitchen", "recipes", "healthy diet", "techniques", "nutrition", "flavors"],
+      "children": [
+        {
+          "id": 23,
+          "name": "Vegan Cooking",
+          "parent": "Cooking",
+          "tags": ["vegan", "plant-based", "recipes", "meat-free", "nutrition", "environmental"],
+          "children": []
+        },
+        {
+          "id": 24,
+          "name": "Healthy Diet",
+          "parent": "Cooking",
+          "tags": ["balanced meals", "low calorie", "high protein", "fiber", "wellness", "energy-boosting"],
+          "children": []
+        },
+        {
+          "id": 25,
+          "name": "Baking",
+          "parent": "Cooking",
+          "tags": ["oven", "desserts", "breads", "pastry", "techniques", "precision"],
+          "children": []
+        },
+        {
+          "id": 26,
+          "name": "Grilling",
+          "parent": "Cooking",
+          "tags": ["outdoor cooking", "charcoal", "flavor", "techniques", "meats", "vegetables"],
+          "children": []
+        },
+        {
+          "id": 27,
+          "name": "Slow Cooking",
+          "parent": "Cooking",
+          "tags": ["stews", "flavors", "crockpot", "convenience", "low heat", "meal prep"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Food Presentation",
+      "tags": ["aesthetics", "plating", "color balance", "texture", "garnishing", "visual appeal"],
+      "children": [
+        {
+          "id": 29,
+          "name": "Garnishing",
+          "parent": "Food Presentation",
+          "tags": ["decorative", "herbs", "edible flowers", "finishing touch", "enhancement", "flavor contrast"],
+          "children": []
+        },
+        {
+          "id": 30,
+          "name": "Plating Techniques",
+          "parent": "Food Presentation",
+          "tags": ["layering", "arrangement", "color contrast", "textural harmony", "edible design", "spatial balance"],
+          "children": []
+        },
+        {
+          "id": 31,
+          "name": "Themed Presentations",
+          "parent": "Food Presentation",
+          "tags": ["events", "celebrations", "creative designs", "cultural themes", "storytelling", "engagement"],
+          "children": []
+        },
+        {
+          "id": 32,
+          "name": "Food Styling",
+          "parent": "Food Presentation",
+          "tags": ["photography", "commercial", "social media", "props", "lighting", "composition"],
+          "children": []
+        }
+      ]
+    }
+  ],
+  "Art": [
+    {
+      "id": 33,
+      "name": "Painting",
+      "tags": ["visual arts", "color theory", "creativity", "expression", "mediums", "textures"],
+      "children": [
+        {
+          "id": 34,
+          "name": "Watercolor",
+          "parent": "Painting",
+          "tags": ["transparency", "lightweight", "blending", "paper-based", "layering", "soft edges"],
+          "children": []
+        },
+        {
+          "id": 35,
+          "name": "Oil Painting",
+          "parent": "Painting",
+          "tags": ["rich colors", "layering", "drying time", "canvas", "depth", "traditional"],
+          "children": []
+        },
+        {
+          "id": 36,
+          "name": "Acrylic Painting",
+          "parent": "Painting",
+          "tags": ["fast drying", "versatile", "texture", "color mixing", "canvas", "experimentation"],
+          "children": []
+        },
+        {
+          "id": 37,
+          "name": "Digital Painting",
+          "parent": "Painting",
+          "tags": ["technology", "software", "creativity", "graphic design", "layers", "virtual canvas"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Sculpture",
+      "tags": ["3D art", "material manipulation", "expression", "shape", "form", "texture"],
+      "children": [
+        {
+          "id": 39,
+          "name": "Clay Sculpting",
+          "parent": "Sculpture",
+          "tags": ["molding", "firing", "glazing", "shaping", "ceramic", "hands-on"],
+          "children": []
+        },
+        {
+          "id": 40,
+          "name": "Stone Carving",
+          "parent": "Sculpture",
+          "tags": ["chisel", "hammer", "stone", "texture", "permanence", "detail-oriented"],
+          "children": []
+        },
+        {
+          "id": 41,
+          "name": "Metal Sculpting",
+          "parent": "Sculpture",
+          "tags": ["welding", "forging", "industrial", "creativity", "durability", "design"],
+          "children": []
+        },
+        {
+          "id": 42,
+          "name": "Wood Carving",
+          "parent": "Sculpture",
+          "tags": ["handcrafted", "detail", "texture", "craftsmanship", "tools", "natural materials"],
+          "children": []
+        }
+      ]
+    }
+  ]
+}
