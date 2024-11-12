@@ -25,7 +25,7 @@ SkillSwap is an app that allows users to exchange skills such as language learni
 Using a terminal (e.g., Windows PowerShell or the one in Visual Studio Code) or GitHub Desktop, clone the repository to your device and navigate to the project folder:
 
 ```
-git clone https://github.com/h/llSwap
+git clone https://github.com/herniezz/SkillSwap
 cd SkillSwap
 ```
 
