@@ -1,0 +1,65 @@
+
+.backgroundGradient {
+    background: linear-gradient(180deg, #a4b0dc 0%, #ffffff 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background-color: #f0f4f8;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.buttonStack {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.optionButton {
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    background-color: #e0e7ef;
+    color: #333;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.optionButton:hover {
+    background-color: #d4dae1;
+}
+
+.nextButton {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 1em;
+    background-color: #9fb7e2;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nextButton:hover {
+    background-color: #8ba5d4;
+}
