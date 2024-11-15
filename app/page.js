@@ -1,10 +1,10 @@
 export default function Quiz() {
     return (
         <>
-            <h1>Quizior</h1>
             <h2>
-                <a href="../quiz_page">siema zrob se quiz</a>
+                <a href="../quiz_page">tu jest quiz (ale na liście bez id, nie dziala do końca)</a>
             </h2>
         </>
     );
 }
+
