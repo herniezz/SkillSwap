@@ -1,0 +1,1482 @@
+[
+    {
+        "id_tag": 1,
+        "name": "coding",
+        "category": "Programming"
+    },
+    {
+        "id_tag": 2,
+        "name": "software",
+        "category": "Programming"
+    },
+    {
+        "id_tag": 3,
+        "name": "algorithms",
+        "category": "Programming"
+    },
+    {
+        "id_tag": 4,
+        "name": "development",
+        "category": "Programming"
+    },
+    {
+        "id_tag": 5,
+        "name": "logic",
+        "category": "Programming"
+    },
+    {
+        "id_tag": 6,
+        "name": "web development",
+        "category": "Programming"
+    },
+    {
+        "id_tag": 7,
+        "name": "data analysis",
+        "category": "Programming"
+    },
+    {
+        "id_tag": 8,
+        "name": "scripting",
+        "category": "Programming"
+    },
+    {
+        "id_tag": 9,
+        "name": "automation",
+        "category": "Programming"
+    },
+    {
+        "id_tag": 10,
+        "name": "front-end development",
+        "category": "Programming"
+    },
+    {
+        "id_tag": 11,
+        "name": "node.js",
+        "category": "Programming"
+    },
+    {
+        "id_tag": 12,
+        "name": "react",
+        "category": "Programming"
+    },
+    {
+        "id_tag": 13,
+        "name": "vue.js",
+        "category": "Programming"
+    },
+    {
+        "id_tag": 14,
+        "name": "android development",
+        "category": "Programming"
+    },
+    {
+        "id_tag": 15,
+        "name": "spring framework",
+        "category": "Programming"
+    },
+    {
+        "id_tag": 16,
+        "name": "enterprise applications",
+        "category": "Programming"
+    },
+    {
+        "id_tag": 17,
+        "name": "game development",
+        "category": "Programming"
+    },
+    {
+        "id_tag": 18,
+        "name": "system programming",
+        "category": "Programming"
+    },
+    {
+        "id_tag": 19,
+        "name": "real-time applications",
+        "category": "Programming"
+    },
+    {
+        "id_tag": 20,
+        "name": "network security",
+        "category": "Cybersecurity"
+    },
+    {
+        "id_tag": 21,
+        "name": "ethical hacking",
+        "category": "Cybersecurity"
+    },
+    {
+        "id_tag": 22,
+        "name": "application security",
+        "category": "Cybersecurity"
+    },
+    {
+        "id_tag": 23,
+        "name": "incident response",
+        "category": "Cybersecurity"
+    },
+    {
+        "id_tag": 24,
+        "name": "cloud security",
+        "category": "Cybersecurity"
+    },
+    {
+        "id_tag": 25,
+        "name": "penetration testing",
+        "category": "Cybersecurity"
+    },
+    {
+        "id_tag": 26,
+        "name": "forensics",
+        "category": "Cybersecurity"
+    },
+    {
+        "id_tag": 27,
+        "name": "circuit design",
+        "category": "Electronics"
+    },
+    {
+        "id_tag": 28,
+        "name": "microcontrollers",
+        "category": "Electronics"
+    },
+    {
+        "id_tag": 29,
+        "name": "signal processing",
+        "category": "Electronics"
+    },
+    {
+        "id_tag": 30,
+        "name": "robotics",
+        "category": "Electronics"
+    },
+    {
+        "id_tag": 31,
+        "name": "iot",
+        "category": "Electronics"
+    },
+    {
+        "id_tag": 32,
+        "name": "tools (tableau, power bi)",
+        "category": "Data Science"
+    },
+    {
+        "id_tag": 33,
+        "name": "dashboards",
+        "category": "Data Science"
+    },
+    {
+        "id_tag": 34,
+        "name": "hypothesis testing",
+        "category": "Data Science"
+    },
+    {
+        "id_tag": 35,
+        "name": "a/b testing",
+        "category": "Data Science"
+    },
+    {
+        "id_tag": 36,
+        "name": "etl pipelines",
+        "category": "Data Science"
+    },
+    {
+        "id_tag": 37,
+        "name": "data warehousing",
+        "category": "Data Science"
+    },
+    {
+        "id_tag": 38,
+        "name": "adobe photoshop",
+        "category": "Design"
+    },
+    {
+        "id_tag": 39,
+        "name": "adobe illustrator",
+        "category": "Design"
+    },
+    {
+        "id_tag": 40,
+        "name": "logo design",
+        "category": "Design"
+    },
+    {
+        "id_tag": 41,
+        "name": "prototyping",
+        "category": "Design"
+    },
+    {
+        "id_tag": 42,
+        "name": "wireframing",
+        "category": "Design"
+    },
+    {
+        "id_tag": 43,
+        "name": "user research",
+        "category": "Design"
+    },
+    {
+        "id_tag": 44,
+        "name": "2d animation",
+        "category": "Design"
+    },
+    {
+        "id_tag": 45,
+        "name": "3d animation",
+        "category": "Design"
+    },
+    {
+        "id_tag": 46,
+        "name": "motion graphics",
+        "category": "Design"
+    },
+    {
+        "id_tag": 261,
+        "name": "art",
+        "category": "Painting"
+    },
+    {
+        "id_tag": 262,
+        "name": "visual expression",
+        "category": "Painting"
+    },
+    {
+        "id_tag": 263,
+        "name": "color theory",
+        "category": "Painting"
+    },
+    {
+        "id_tag": 264,
+        "name": "creativity",
+        "category": "Painting"
+    },
+    {
+        "id_tag": 265,
+        "name": "water-based",
+        "category": "Painting"
+    },
+    {
+        "id_tag": 266,
+        "name": "fluid",
+        "category": "Painting"
+    },
+    {
+        "id_tag": 267,
+        "name": "transparent",
+        "category": "Painting"
+    },
+    {
+        "id_tag": 268,
+        "name": "delicate",
+        "category": "Painting"
+    },
+    {
+        "id_tag": 269,
+        "name": "oil-based",
+        "category": "Painting"
+    },
+    {
+        "id_tag": 270,
+        "name": "vivid colors",
+        "category": "Painting"
+    },
+    {
+        "id_tag": 271,
+        "name": "layering",
+        "category": "Painting"
+    },
+    {
+        "id_tag": 272,
+        "name": "realism",
+        "category": "Painting"
+    },
+    {
+        "id_tag": 273,
+        "name": "versatile",
+        "category": "Painting"
+    },
+    {
+        "id_tag": 274,
+        "name": "fast-drying",
+        "category": "Painting"
+    },
+    {
+        "id_tag": 275,
+        "name": "modern",
+        "category": "Painting"
+    },
+    {
+        "id_tag": 276,
+        "name": "layering",
+        "category": "Painting"
+    },
+    {
+        "id_tag": 277,
+        "name": "digital tools",
+        "category": "Painting"
+    },
+    {
+        "id_tag": 278,
+        "name": "technology",
+        "category": "Painting"
+    },
+    {
+        "id_tag": 279,
+        "name": "creative",
+        "category": "Painting"
+    },
+    {
+        "id_tag": 280,
+        "name": "animation",
+        "category": "Painting"
+    },
+    {
+        "id_tag": 281,
+        "name": "soft colors",
+        "category": "Painting"
+    },
+    {
+        "id_tag": 282,
+        "name": "drawing",
+        "category": "Painting"
+    },
+    {
+        "id_tag": 283,
+        "name": "layering",
+        "category": "Painting"
+    },
+    {
+        "id_tag": 284,
+        "name": "texture",
+        "category": "Painting"
+    },
+    {
+        "id_tag": 285,
+        "name": "3D art",
+        "category": "Sculpture"
+    },
+    {
+        "id_tag": 286,
+        "name": "material manipulation",
+        "category": "Sculpture"
+    },
+    {
+        "id_tag": 287,
+        "name": "form",
+        "category": "Sculpture"
+    },
+    {
+        "id_tag": 289,
+        "name": "craftsmanship",
+        "category": "Sculpture"
+    },
+    {
+        "id_tag": 290,
+        "name": "ceramic",
+        "category": "Sculpture"
+    },
+    {
+        "id_tag": 291,
+        "name": "handcraft",
+        "category": "Sculpture"
+    },
+    {
+        "id_tag": 292,
+        "name": "flexible",
+        "category": "Sculpture"
+    },
+    {
+        "id_tag": 293,
+        "name": "texture",
+        "category": "Sculpture"
+    },
+    {
+        "id_tag": 294,
+        "name": "hard materials",
+        "category": "Sculpture"
+    },
+    {
+        "id_tag": 295,
+        "name": "chiseling",
+        "category": "Sculpture"
+    },
+    {
+        "id_tag": 296,
+        "name": "durable",
+        "category": "Sculpture"
+    },
+    {
+        "id_tag": 297,
+        "name": "ancient",
+        "category": "Sculpture"
+    },
+    {
+        "id_tag": 298,
+        "name": "welding",
+        "category": "Sculpture"
+    },
+    {
+        "id_tag": 299,
+        "name": "industrial",
+        "category": "Sculpture"
+    },
+    {
+        "id_tag": 300,
+        "name": "modern",
+        "category": "Sculpture"
+    },
+    {
+        "id_tag": 301,
+        "name": "durability",
+        "category": "Sculpture"
+    },
+    {
+        "id_tag": 302,
+        "name": "natural materials",
+        "category": "Sculpture"
+    },
+    {
+        "id_tag": 303,
+        "name": "hand tools",
+        "category": "Sculpture"
+    },
+    {
+        "id_tag": 304,
+        "name": "furniture",
+        "category": "Sculpture"
+    },
+    {
+        "id_tag": 305,
+        "name": "craft",
+        "category": "Sculpture"
+    },
+    {
+        "id_tag": 306,
+        "name": "technology",
+        "category": "Sculpture"
+    },
+    {
+        "id_tag": 307,
+        "name": "innovation",
+        "category": "Sculpture"
+    },
+    {
+        "id_tag": 47,
+        "name": "precision",
+        "category": "Sculpture"
+    },
+    {
+        "id_tag": 48,
+        "name": "design",
+        "category": "Sculpture"
+    },
+    {
+        "id_tag": 49,
+        "name": "musical instruments",
+        "category": "Instrumental"
+    },
+    {
+        "id_tag": 50,
+        "name": "performance",
+        "category": "Instrumental"
+    },
+    {
+        "id_tag": 51,
+        "name": "composition",
+        "category": "Instrumental"
+    },
+    {
+        "id_tag": 52,
+        "name": "orchestra",
+        "category": "Instrumental"
+    },
+    {
+        "id_tag": 53,
+        "name": "string instrument",
+        "category": "Instrumental"
+    },
+    {
+        "id_tag": 54,
+        "name": "acoustic",
+        "category": "Instrumental"
+    },
+    {
+        "id_tag": 55,
+        "name": "electric",
+        "category": "Instrumental"
+    },
+    {
+        "id_tag": 56,
+        "name": "solo performance",
+        "category": "Instrumental"
+    },
+    {
+        "id_tag": 57,
+        "name": "keyboard instrument",
+        "category": "Instrumental"
+    },
+    {
+        "id_tag": 58,
+        "name": "classical",
+        "category": "Instrumental"
+    },
+    {
+        "id_tag": 59,
+        "name": "grand piano",
+        "category": "Instrumental"
+    },
+    {
+        "id_tag": 60,
+        "name": "performance",
+        "category": "Instrumental"
+    },
+    {
+        "id_tag": 61,
+        "name": "percussion",
+        "category": "Instrumental"
+    },
+    {
+        "id_tag": 62,
+        "name": "rhythm",
+        "category": "Instrumental"
+    },
+    {
+        "id_tag": 63,
+        "name": "drum kit",
+        "category": "Instrumental"
+    },
+    {
+        "id_tag": 64,
+        "name": "beat",
+        "category": "Instrumental"
+    },
+    {
+        "id_tag": 65,
+        "name": "vocal performance",
+        "category": "Singing"
+    },
+    {
+        "id_tag": 66,
+        "name": "voice training",
+        "category": "Singing"
+    },
+    {
+        "id_tag": 67,
+        "name": "harmony",
+        "category": "Singing"
+    },
+    {
+        "id_tag": 68,
+        "name": "choral music",
+        "category": "Singing"
+    },
+    {
+        "id_tag": 69,
+        "name": "voice technique",
+        "category": "Singing"
+    },
+    {
+        "id_tag": 70,
+        "name": "range expansion",
+        "category": "Singing"
+    },
+    {
+        "id_tag": 71,
+        "name": "breathing exercises",
+        "category": "Singing"
+    },
+    {
+        "id_tag": 72,
+        "name": "pitch control",
+        "category": "Singing"
+    },
+    {
+        "id_tag": 73,
+        "name": "vocal arrangement",
+        "category": "Singing"
+    },
+    {
+        "id_tag": 74,
+        "name": "duet",
+        "category": "Singing"
+    },
+    {
+        "id_tag": 75,
+        "name": "choir",
+        "category": "Singing"
+    },
+    {
+        "id_tag": 76,
+        "name": "three-part harmony",
+        "category": "Singing"
+    },
+    {
+        "id_tag": 77,
+        "name": "recording",
+        "category": "Music Production"
+    },
+    {
+        "id_tag": 78,
+        "name": "mixing",
+        "category": "Music Production"
+    },
+    {
+        "id_tag": 79,
+        "name": "mastering",
+        "category": "Music Production"
+    },
+    {
+        "id_tag": 80,
+        "name": "sound engineering",
+        "category": "Music Production"
+    },
+    {
+        "id_tag": 81,
+        "name": "audio engineering",
+        "category": "Music Production"
+    },
+    {
+        "id_tag": 82,
+        "name": "sound editing",
+        "category": "Music Production"
+    },
+    {
+        "id_tag": 83,
+        "name": "studio equipment",
+        "category": "Music Production"
+    },
+    {
+        "id_tag": 84,
+        "name": "effects processing",
+        "category": "Music Production"
+    },
+    {
+        "id_tag": 85,
+        "name": "acoustic treatment",
+        "category": "Music Production"
+    },
+    {
+        "id_tag": 86,
+        "name": "audio mixing",
+        "category": "Music Production"
+    },
+    {
+        "id_tag": 87,
+        "name": "audio mastering",
+        "category": "Music Production"
+    },
+    {
+        "id_tag": 88,
+        "name": "recording studio",
+        "category": "Music Production"
+    },
+    {
+        "id_tag": 89,
+        "name": "language",
+        "category": "English"
+    },
+    {
+        "id_tag": 90,
+        "name": "linguistics",
+        "category": "English"
+    },
+    {
+        "id_tag": 91,
+        "name": "communication",
+        "category": "English"
+    },
+    {
+        "id_tag": 92,
+        "name": "romance language",
+        "category": "Spanish"
+    },
+    {
+        "id_tag": 93,
+        "name": "spanish dialects",
+        "category": "Spanish"
+    },
+    {
+        "id_tag": 94,
+        "name": "latin american culture",
+        "category": "Spanish"
+    },
+    {
+        "id_tag": 95,
+        "name": "romance language",
+        "category": "French"
+    },
+    {
+        "id_tag": 96,
+        "name": "francophone",
+        "category": "French"
+    },
+    {
+        "id_tag": 97,
+        "name": "literature",
+        "category": "French"
+    },
+    {
+        "id_tag": 98,
+        "name": "germanic language",
+        "category": "German"
+    },
+    {
+        "id_tag": 99,
+        "name": "linguistic roots",
+        "category": "German"
+    },
+    {
+        "id_tag": 100,
+        "name": "german culture",
+        "category": "German"
+    },
+    {
+        "id_tag": 101,
+        "name": "asian language",
+        "category": "Japanese"
+    },
+    {
+        "id_tag": 102,
+        "name": "japanese culture",
+        "category": "Japanese"
+    },
+    {
+        "id_tag": 103,
+        "name": "kana",
+        "category": "Japanese"
+    },
+    {
+        "id_tag": 104,
+        "name": "asian language",
+        "category": "Chinese (Mandarin)"
+    },
+    {
+        "id_tag": 105,
+        "name": "tonal language",
+        "category": "Chinese (Mandarin)"
+    },
+    {
+        "id_tag": 106,
+        "name": "china",
+        "category": "Chinese (Mandarin)"
+    },
+    {
+        "id_tag": 107,
+        "name": "semitic language",
+        "category": "Arabic"
+    },
+    {
+        "id_tag": 108,
+        "name": "arabic culture",
+        "category": "Arabic"
+    },
+    {
+        "id_tag": 109,
+        "name": "middle eastern culture",
+        "category": "Arabic"
+    },
+    {
+        "id_tag": 110,
+        "name": "strength training",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 111,
+        "name": "cardio",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 112,
+        "name": "weight loss",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 113,
+        "name": "muscle building",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 114,
+        "name": "barbell",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 115,
+        "name": "deadlift",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 116,
+        "name": "squats",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 117,
+        "name": "muscle hypertrophy",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 118,
+        "name": "running",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 119,
+        "name": "cycling",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 120,
+        "name": "HIIT",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 121,
+        "name": "endurance",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 122,
+        "name": "high-intensity training",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 123,
+        "name": "functional fitness",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 124,
+        "name": "Olympic lifting",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 125,
+        "name": "mindfulness",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 126,
+        "name": "flexibility",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 127,
+        "name": "breathing exercises",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 128,
+        "name": "postures",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 129,
+        "name": "alignment",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 130,
+        "name": "flow",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 131,
+        "name": "dynamic movement",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 132,
+        "name": "traditional",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 133,
+        "name": "set sequence",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 134,
+        "name": "core strength",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 135,
+        "name": "breathing techniques",
+        "category": "Physical Training"
+    },
+    {
+        "id_tag": 136,
+        "name": "self-defense",
+        "category": "Martial Arts"
+    },
+    {
+        "id_tag": 137,
+        "name": "discipline",
+        "category": "Martial Arts"
+    },
+    {
+        "id_tag": 138,
+        "name": "combat",
+        "category": "Martial Arts"
+    },
+    {
+        "id_tag": 139,
+        "name": "striking",
+        "category": "Martial Arts"
+    },
+    {
+        "id_tag": 140,
+        "name": "kata",
+        "category": "Martial Arts"
+    },
+    {
+        "id_tag": 141,
+        "name": "grappling",
+        "category": "Martial Arts"
+    },
+    {
+        "id_tag": 142,
+        "name": "throwing techniques",
+        "category": "Martial Arts"
+    },
+    {
+        "id_tag": 143,
+        "name": "ground fighting",
+        "category": "Martial Arts"
+    },
+    {
+        "id_tag": 144,
+        "name": "submissions",
+        "category": "Martial Arts"
+    },
+    {
+        "id_tag": 145,
+        "name": "strikes",
+        "category": "Martial Arts"
+    },
+    {
+        "id_tag": 146,
+        "name": "knees",
+        "category": "Martial Arts"
+    },
+    {
+        "id_tag": 147,
+        "name": "elbows",
+        "category": "Martial Arts"
+    },
+    {
+        "id_tag": 148,
+        "name": "adventure",
+        "category": "Outdoor Activities"
+    },
+    {
+        "id_tag": 149,
+        "name": "exploration",
+        "category": "Outdoor Activities"
+    },
+    {
+        "id_tag": 150,
+        "name": "nature",
+        "category": "Outdoor Activities"
+    },
+    {
+        "id_tag": 151,
+        "name": "bouldering",
+        "category": "Outdoor Activities"
+    },
+    {
+        "id_tag": 152,
+        "name": "top rope",
+        "category": "Outdoor Activities"
+    },
+    {
+        "id_tag": 153,
+        "name": "trail",
+        "category": "Outdoor Activities"
+    },
+    {
+        "id_tag": 154,
+        "name": "mountain hiking",
+        "category": "Outdoor Activities"
+    },
+    {
+        "id_tag": 155,
+        "name": "wilderness",
+        "category": "Outdoor Activities"
+    },
+    {
+        "id_tag": 156,
+        "name": "fire starting",
+        "category": "Outdoor Activities"
+    },
+    {
+        "id_tag": 157,
+        "name": "shelter building",
+        "category": "Outdoor Activities"
+    },
+    {
+        "id_tag": 158,
+        "name": "paddling",
+        "category": "Outdoor Activities"
+    },
+    {
+        "id_tag": 159,
+        "name": "whitewater",
+        "category": "Outdoor Activities"
+    },
+    {
+        "id_tag": 160,
+        "name": "handmade",
+        "category": "Crafts"
+    },
+    {
+        "id_tag": 161,
+        "name": "creativity",
+        "category": "Crafts"
+    },
+    {
+        "id_tag": 162,
+        "name": "textiles",
+        "category": "Crafts"
+    },
+    {
+        "id_tag": 163,
+        "name": "yarn",
+        "category": "Crafts"
+    },
+    {
+        "id_tag": 164,
+        "name": "needles",
+        "category": "Crafts"
+    },
+    {
+        "id_tag": 165,
+        "name": "knit stitches",
+        "category": "Crafts"
+    },
+    {
+        "id_tag": 166,
+        "name": "hook",
+        "category": "Crafts"
+    },
+    {
+        "id_tag": 167,
+        "name": "stitches",
+        "category": "Crafts"
+    },
+    {
+        "id_tag": 168,
+        "name": "amigurumi",
+        "category": "Crafts"
+    },
+    {
+        "id_tag": 169,
+        "name": "thread",
+        "category": "Crafts"
+    },
+    {
+        "id_tag": 170,
+        "name": "needlework",
+        "category": "Crafts"
+    },
+    {
+        "id_tag": 171,
+        "name": "stitching techniques",
+        "category": "Crafts"
+    },
+    {
+        "id_tag": 172,
+        "name": "knots",
+        "category": "Crafts"
+    },
+    {
+        "id_tag": 173,
+        "name": "cord",
+        "category": "Crafts"
+    },
+    {
+        "id_tag": 174,
+        "name": "wall hangings",
+        "category": "Crafts"
+    },
+    {
+        "id_tag": 175,
+        "name": "home repair",
+        "category": "DIY Home Improvement"
+    },
+    {
+        "id_tag": 176,
+        "name": "maintenance",
+        "category": "DIY Home Improvement"
+    },
+    {
+        "id_tag": 177,
+        "name": "improvement",
+        "category": "DIY Home Improvement"
+    },
+    {
+        "id_tag": 178,
+        "name": "carpentry",
+        "category": "DIY Home Improvement"
+    },
+    {
+        "id_tag": 179,
+        "name": "woodworking tools",
+        "category": "DIY Home Improvement"
+    },
+    {
+        "id_tag": 180,
+        "name": "furniture making",
+        "category": "DIY Home Improvement"
+    },
+    {
+        "id_tag": 181,
+        "name": "refinishing",
+        "category": "DIY Home Improvement"
+    },
+    {
+        "id_tag": 182,
+        "name": "upcycling",
+        "category": "DIY Home Improvement"
+    },
+    {
+        "id_tag": 183,
+        "name": "wood restoration",
+        "category": "DIY Home Improvement"
+    },
+    {
+        "id_tag": 184,
+        "name": "pipes",
+        "category": "DIY Home Improvement"
+    },
+    {
+        "id_tag": 185,
+        "name": "water systems",
+        "category": "DIY Home Improvement"
+    },
+    {
+        "id_tag": 186,
+        "name": "leak repairs",
+        "category": "DIY Home Improvement"
+    },
+    {
+        "id_tag": 187,
+        "name": "painting",
+        "category": "DIY Home Improvement"
+    },
+    {
+        "id_tag": 188,
+        "name": "brush techniques",
+        "category": "DIY Home Improvement"
+    },
+    {
+        "id_tag": 189,
+        "name": "wall finishes",
+        "category": "DIY Home Improvement"
+    },
+    {
+        "id_tag": 190,
+        "name": "business strategy",
+        "category": "Business and Management"
+    },
+    {
+        "id_tag": 191,
+        "name": "leadership",
+        "category": "Business and Management"
+    },
+    {
+        "id_tag": 192,
+        "name": "organization",
+        "category": "Business and Management"
+    },
+    {
+        "id_tag": 193,
+        "name": "project planning",
+        "category": "Business and Management"
+    },
+    {
+        "id_tag": 194,
+        "name": "resource management",
+        "category": "Business and Management"
+    },
+    {
+        "id_tag": 195,
+        "name": "task delegation",
+        "category": "Business and Management"
+    },
+    {
+        "id_tag": 196,
+        "name": "team building",
+        "category": "Business and Management"
+    },
+    {
+        "id_tag": 197,
+        "name": "decision making",
+        "category": "Business and Management"
+    },
+    {
+        "id_tag": 198,
+        "name": "motivation",
+        "category": "Business and Management"
+    },
+    {
+        "id_tag": 199,
+        "name": "Agile",
+        "category": "Business and Management"
+    },
+    {
+        "id_tag": 200,
+        "name": "Scrum framework",
+        "category": "Business and Management"
+    },
+    {
+        "id_tag": 201,
+        "name": "sprints",
+        "category": "Business and Management"
+    },
+    {
+        "id_tag": 202,
+        "name": "requirements gathering",
+        "category": "Business and Management"
+    },
+    {
+        "id_tag": 203,
+        "name": "stakeholder communication",
+        "category": "Business and Management"
+    },
+    {
+        "id_tag": 204,
+        "name": "investment",
+        "category": "Finance"
+    },
+    {
+        "id_tag": 205,
+        "name": "planning",
+        "category": "Finance"
+    },
+    {
+        "id_tag": 206,
+        "name": "analysis",
+        "category": "Finance"
+    },
+    {
+        "id_tag": 207,
+        "name": "budgeting",
+        "category": "Finance"
+    },
+    {
+        "id_tag": 208,
+        "name": "saving",
+        "category": "Finance"
+    },
+    {
+        "id_tag": 209,
+        "name": "retirement planning",
+        "category": "Finance"
+    },
+    {
+        "id_tag": 210,
+        "name": "stocks",
+        "category": "Finance"
+    },
+    {
+        "id_tag": 211,
+        "name": "investing",
+        "category": "Finance"
+    },
+    {
+        "id_tag": 212,
+        "name": "bookkeeping",
+        "category": "Finance"
+    },
+    {
+        "id_tag": 213,
+        "name": "financial statements",
+        "category": "Finance"
+    },
+    {
+        "id_tag": 214,
+        "name": "blockchain",
+        "category": "Finance"
+    },
+    {
+        "id_tag": 215,
+        "name": "cryptocurrencies",
+        "category": "Finance"
+    },
+    {
+        "id_tag": 216,
+        "name": "Bitcoin",
+        "category": "Finance"
+    },
+    {
+        "id_tag": 217,
+        "name": "digital marketing",
+        "category": "Marketing"
+    },
+    {
+        "id_tag": 218,
+        "name": "advertising",
+        "category": "Marketing"
+    },
+    {
+        "id_tag": 219,
+        "name": "content strategy",
+        "category": "Marketing"
+    },
+    {
+        "id_tag": 220,
+        "name": "Facebook",
+        "category": "Marketing"
+    },
+    {
+        "id_tag": 221,
+        "name": "Instagram",
+        "category": "Marketing"
+    },
+    {
+        "id_tag": 222,
+        "name": "TikTok",
+        "category": "Marketing"
+    },
+    {
+        "id_tag": 223,
+        "name": "blogging",
+        "category": "Marketing"
+    },
+    {
+        "id_tag": 224,
+        "name": "SEO",
+        "category": "Marketing"
+    },
+    {
+        "id_tag": 225,
+        "name": "keywords",
+        "category": "Marketing"
+    },
+    {
+        "id_tag": 226,
+        "name": "ranking",
+        "category": "Marketing"
+    },
+    {
+        "id_tag": 227,
+        "name": "on-page SEO",
+        "category": "Marketing"
+    },
+    {
+        "id_tag": 228,
+        "name": "email lists",
+        "category": "Marketing"
+    },
+    {
+        "id_tag": 229,
+        "name": "newsletters",
+        "category": "Marketing"
+    },
+    {
+        "id_tag": 230,
+        "name": "creative writing",
+        "category": "Writing and Communication"
+    },
+    {
+        "id_tag": 231,
+        "name": "copywriting",
+        "category": "Writing and Communication"
+    },
+    {
+        "id_tag": 232,
+        "name": "public speaking",
+        "category": "Writing and Communication"
+    },
+    {
+        "id_tag": 233,
+        "name": "fiction",
+        "category": "Writing and Communication"
+    },
+    {
+        "id_tag": 234,
+        "name": "non-fiction",
+        "category": "Writing and Communication"
+    },
+    {
+        "id_tag": 235,
+        "name": "advertisements",
+        "category": "Writing and Communication"
+    },
+    {
+        "id_tag": 236,
+        "name": "marketing copy",
+        "category": "Writing and Communication"
+    },
+    {
+        "id_tag": 237,
+        "name": "articles",
+        "category": "Writing and Communication"
+    },
+    {
+        "id_tag": 238,
+        "name": "content writing",
+        "category": "Writing and Communication"
+    },
+    {
+        "id_tag": 239,
+        "name": "presentations",
+        "category": "Writing and Communication"
+    },
+    {
+        "id_tag": 240,
+        "name": "speech writing",
+        "category": "Writing and Communication"
+    },
+    {
+        "id_tag": 241,
+        "name": "photography",
+        "category": "Photography and Video Production"
+    },
+    {
+        "id_tag": 242,
+        "name": "video production",
+        "category": "Photography and Video Production"
+    },
+    {
+        "id_tag": 243,
+        "name": "camera techniques",
+        "category": "Photography and Video Production"
+    },
+    {
+        "id_tag": 244,
+        "name": "DSLR cameras",
+        "category": "Photography and Video Production"
+    },
+    {
+        "id_tag": 245,
+        "name": "manual settings",
+        "category": "Photography and Video Production"
+    },
+    {
+        "id_tag": 246,
+        "name": "phone cameras",
+        "category": "Photography and Video Production"
+    },
+    {
+        "id_tag": 247,
+        "name": "mobile photography",
+        "category": "Photography and Video Production"
+    },
+    {
+        "id_tag": 248,
+        "name": "video editing software",
+        "category": "Photography and Video Production"
+    },
+    {
+        "id_tag": 249,
+        "name": "Premiere Pro",
+        "category": "Photography and Video Production"
+    },
+    {
+        "id_tag": 250,
+        "name": "Final Cut Pro",
+        "category": "Photography and Video Production"
+    }
+]
