@@ -13,7 +13,7 @@ export default function Buttons() {
         Gradient button
       </Button>
       <Button variant="filled" color="rgba(243, 232, 148, 1)">Nowinki techniczne</Button>
-      <Button variant="filled" color="black" radius="md">Aktywność sportowa</Button>
+      <Button sx={{ backgroundColor: 'BE8DFF', border: '2px solid orange', borderRadius: '10px'}}>Aktywność sportowa</Button>
     </Group>
   );
 }
