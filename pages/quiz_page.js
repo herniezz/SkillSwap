@@ -24,8 +24,8 @@ const QuizPage = () => {
                     {language === "pl" ? "Hej, wybierzmy rekomendowane skille 👋" : "Hi, let's choose what we would like to recommend you 👋"}
                 </Title>
                 <div className={styles.buttonStack}>
-                    <button className={styles.optionButton} onClick={() => setLanguage("en")}>English</button>
-                    <button className={styles.optionButton} onClick={() => setLanguage("pl")}>Polski</button>
+                    <Button variant="light" color="violet" onClick={() => setLanguage("en")}>English</Button>
+                    <Button variant="light" color="violet" onClick={() => setLanguage("pl")}>Polski</Button>
                 </div>
 
                 {results ? (
@@ -37,7 +37,7 @@ const QuizPage = () => {
                         ))}
                     </Stack>
                 ) : (
-                    <Quiz quizData={quizData} onComplete={handleQuizComplete} />
+                    <Quiz quizData={quizData} onComplete={handleQuizComplete}/>
                 )}
             </div>
         </div>
