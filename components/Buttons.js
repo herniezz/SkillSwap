@@ -12,7 +12,8 @@ export default function Buttons() {
       <Button variant="gradient" gradient={{ from: 'indigo', to: 'cyan' }} onClick={handleClick}>
         Gradient button
       </Button>
-      <Button variant="filled" color="rgba(243, 232, 252, 1)">Button</Button>;
+      <Button variant="filled" color="rgba(243, 232, 148, 1)">Nowinki techniczne</Button>
+      <Button variant="filled" color="black" radius="md">Aktywność sportowa</Button>
     </Group>
   );
 }
