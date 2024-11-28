@@ -18,6 +18,11 @@ export default function Page() {
                     Tu jest strona profilu
                 </Link>
             </h2>
+            <h2>
+                <Link href="/buttons_style">
+                    Przyciski
+                </Link>
+            </h2>
         </>
     );
 }
