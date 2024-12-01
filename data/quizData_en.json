@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "question": "What activity do you enjoy in your free time?",
+    "question": "1. What activity do you enjoy in your free time?",
     "options": [
       "Sports activity",
       "Admiring art",
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "question": "What topics do you most often follow in media or online?",
+    "question": "2. What topics do you most often follow in media or online?",
     "options": [
       "Technical news",
       "Fashion, latest trends",
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "question": "In which field would you like to develop your knowledge?",
+    "question": "3. In which field would you like to develop your knowledge?",
     "options": [
       "Technology-related topics",
       "Meeting new people",
