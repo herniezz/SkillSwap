@@ -23,6 +23,11 @@ export default function Page() {
                     Przyciski
                 </Link>
             </h2>
+            <h2>
+                <Link href="/ProposedProfiles">
+                    Tu są proponowane profile
+                </Link>
+            </h2>
         </>
     );
 }
