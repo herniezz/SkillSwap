@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.6.0",
     "@mantine/core": "^6.0.21",
     "@mantine/hooks": "^6.0.21",
     "color-convert": "^2.0.1",

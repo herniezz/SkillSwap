@@ -23,6 +23,16 @@ export default function Page() {
                     Przyciski
                 </Link>
             </h2>
+            <h2>
+                <Link href="/signup">
+                    Rejestracja
+                </Link>
+            </h2>
+            <h2>
+                <Link href="/signin">
+                    Logowanie
+                </Link>
+            </h2>
         </>
     );
 }
