@@ -1,21 +1,24 @@
+import { useRouter } from 'next/router'; // Import Next.js router
 import { Avatar, Button, Card, Text, Title } from '@mantine/core';
 import styles from '../styles/pages/proposed.profiles.module.css';
-import { DoubleNavbar } from '@/components/DoubleNavbar';
 
 const profiles = [
     {
+        id: 'ania', // Unique identifier for the profiles
         name: 'Ania Kowalska',
         age: 28,
         avatar: '/assets/ania.png',
         skills: ['programowanie HTML', 'tenis', 'szydełkowanie'],
     },
     {
+        id: 'bob',
         name: 'Bob Kowalski',
         age: 19,
         avatar: '/assets/bob.png',
         skills: ['programowanie HTML', 'kreatywne pisanie'],
     },
     {
+        id: 'kamala',
         name: 'Kamala Wiśniewska',
         age: 34,
         avatar: '/assets/Kamala.png',
@@ -24,12 +27,25 @@ const profiles = [
 ];
 
 export default function ProposedProfiles() {
+    const router = useRouter(); // Initialize router
+
+    // Function to handle redirection
+    const handleProfileClick = (id) => {
+        router.push(`/profiles/${id}`); // Redirect to the static demo page
+    };
+
     return (
         <div>
-            <DoubleNavbar />
             <div className={styles.container}>
-                {profiles.map((profile, index) => (
-                    <Card key={index} shadow="sm" p="lg" className={styles.card}>
+                {profiles.map((profile) => (
+                    <Card
+                        key={profile.id}
+                        shadow="sm"
+                        p="lg"
+                        className={styles.card}
+                        onClick={() => handleProfileClick(profile.id)} // Add click handler
+                        style={{ cursor: 'pointer' }} // Indicate clickable area
+                    >
                         <div className={styles.profileHeader}>
                             <Avatar src={profile.avatar} size="lg" radius="xl" />
                             <div className={styles.profileInfo}>

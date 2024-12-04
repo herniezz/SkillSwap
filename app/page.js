@@ -14,7 +14,7 @@ export default function Page() {
                 </Link>
             </h2>
             <h2>
-                <Link href="/profile/1">
+                <Link href="/pages/profiles/1">
                     Tu jest strona profilu
                 </Link>
             </h2>

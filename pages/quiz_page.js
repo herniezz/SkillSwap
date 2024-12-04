@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 import { Title, Stack, Text } from '@mantine/core';
 import Quiz from '../components/Quiz';
 import { recommendSkills } from '../utils/RecommendSkills';
@@ -7,10 +8,15 @@ import styles from '../styles/pages/quiz.module.css';
 
 const QuizPage = () => {
     const [results, setResults] = useState(null);
+    const router = useRouter();
 
     const handleQuizComplete = (answers) => {
         const recommendedSkills = recommendSkills(answers);
         setResults(recommendedSkills);
+    };
+
+    const handleSkillClick = (skill) => {
+        router.push('/ProposedProfiles');
     };
 
     return (
@@ -24,7 +30,12 @@ const QuizPage = () => {
                         </h2>
                         <div className={styles.skillsContainer}>
                             {results.map((skill, index) => (
-                                <Text key={index} className={styles.skillItem}>
+                                <Text
+                                    key={index}
+                                    className={styles.skillItem}
+                                    onClick={() => handleSkillClick(skill)}
+                                    style={{ cursor: 'pointer' }}
+                                >
                                     {skill}
                                 </Text>
                             ))}
