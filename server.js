@@ -1,18 +1,13 @@
 const express = require('express');
-const next = require('next');
+const app = express();
 
-const app = next({ dev: process.env.NODE_ENV !== 'production' });
-const handle = app.getRequestHandler();
+const PORT = process.env.PORT || 3000;
 
-app.prepare().then(() => {
-    const server = express();
+// Root route handler
+app.get('/', (req, res) => {
+    res.send('SkillSwap Backend is running!');
+});
 
-    server.all('*', (req, res) => {
-        return handle(req, res);
-    });
-
-    const PORT = process.env.PORT || 3000;
-    server.listen(PORT, () => {
-        console.log(`> Ready on http://localhost:${PORT}`);
-    });
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
