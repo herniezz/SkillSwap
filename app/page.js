@@ -14,7 +14,7 @@ export default function Page() {
                 </Link>
             </h2>
             <h2>
-                <Link href="/profile/1">
+                <Link href="/pages/profiles/1">
                     Tu jest strona profilu
                 </Link>
             </h2>
@@ -31,6 +31,11 @@ export default function Page() {
             <h2>
                 <Link href="/signin">
                     Logowanie
+                </Link>
+            </h2>
+            <h2>
+                <Link href="/ProposedProfiles">
+                    Tu są proponowane profile
                 </Link>
             </h2>
         </>

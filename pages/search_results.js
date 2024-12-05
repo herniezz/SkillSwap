@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { Button, Title, Text } from '@mantine/core';
-import styles from '../styles/pages/search-results.module.css';
+import styles from '../styles/pages/search.module.css';
 
 export default function SearchResults() {
     const router = useRouter();
