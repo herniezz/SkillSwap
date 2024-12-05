@@ -3,9 +3,14 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
-// Root route handler
+// root routing
 app.get('/', (req, res) => {
-    res.send('SkillSwap Backend is running!');
+    res.send('please, I beg you, work :((');
+});
+
+// API route to expose Clerk publishableKey
+app.get('/api/clerk-key', (req, res) => {
+    res.json({ publishableKey: process.env.CLERK_PUBLISHABLE_KEY });
 });
 
 app.listen(PORT, () => {
