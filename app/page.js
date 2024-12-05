@@ -24,6 +24,16 @@ export default function Page() {
                 </Link>
             </h2>
             <h2>
+                <Link href="/signup">
+                    Rejestracja
+                </Link>
+            </h2>
+            <h2>
+                <Link href="/signin">
+                    Logowanie
+                </Link>
+            </h2>
+            <h2>
                 <Link href="/ProposedProfiles">
                     Tu są proponowane profile
                 </Link>
