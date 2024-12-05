@@ -14,13 +14,18 @@ export default function Page() {
                 </Link>
             </h2>
             <h2>
-                <Link href="/profile/1">
+                <Link href="/pages/profiles/1">
                     Tu jest strona profilu
                 </Link>
             </h2>
             <h2>
                 <Link href="/buttons_style">
                     Przyciski
+                </Link>
+            </h2>
+            <h2>
+                <Link href="/ProposedProfiles">
+                    Tu są proponowane profile
                 </Link>
             </h2>
         </>
