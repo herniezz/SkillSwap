@@ -1,26 +1,7 @@
 import { MantineProvider } from '@mantine/core';
 
-import {
-    ClerkProvider,
-    SignInButton,
-    SignedIn,
-    SignedOut,
-    UserButton
-  } from '@clerk/nextjs'
-  import '@/styles/globals.css'
-
 export default function MyApp({ Component, pageProps }) {
     return (
-
-        <ClerkProvider>
-    <SignedOut>
-      <SignInButton />
-    </SignedOut>
-    <SignedIn>
-      <UserButton />
-    </SignedIn>
-    <Component {...pageProps} />
-
         <MantineProvider
             theme={{
                 colorScheme: 'light', // jasny kolor
@@ -65,6 +46,5 @@ export default function MyApp({ Component, pageProps }) {
         >
             <Component {...pageProps} />
         </MantineProvider>
-        </ClerkProvider>
     );
 }

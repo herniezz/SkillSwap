@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@clerk/nextjs": "^6.7.1",
     "@mantine/core": "^6.0.21",
     "@mantine/hooks": "^6.0.21",
     "@tabler/icons-react": "^3.23.0",
