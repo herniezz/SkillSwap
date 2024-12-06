@@ -11,11 +11,12 @@ app.get('/', (req, res) => {
     res.send('HALO PLS WORK');
 });
 
-// Clerk publishableKey route
+// Route to get the Clerk publishable key
 app.get('/api/clerk-key', (req, res) => {
-    const publishableKey = process.env.CLERK_PUBLISHABLE_KEY;
+    const publishableKey = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
     if (!publishableKey) {
-        res.status(500).json({ error: 'CLERK_PUBLISHABLE_KEY is not set.' });
+        console.error("NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY is not set in env vars");
+        res.status(500).json({ error: "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY is missing.;_____;" });
         return;
     }
     res.json({ publishableKey });
