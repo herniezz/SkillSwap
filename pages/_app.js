@@ -1,76 +1,70 @@
-import { useState, useEffect } from 'react';
 import { MantineProvider } from '@mantine/core';
-import { ClerkProvider } from '@clerk/nextjs';
-import '@/styles/globals.css';
+
+import {
+    ClerkProvider,
+    SignInButton,
+    SignedIn,
+    SignedOut,
+    UserButton
+  } from '@clerk/nextjs'
+  import '@/styles/globals.css'
 
 export default function MyApp({ Component, pageProps }) {
-    const [publishableKey, setPublishableKey] = useState(null);
-
-    useEffect(() => {
-        // Fetch the Clerk publishable key from the backend
-        const fetchClerkKey = async () => {
-            try {
-                const response = await fetch('https://fast-peak-76057-7dc46f68d3e1.herokuapp.com/api/clerk-key');
-                const data = await response.json();
-                setPublishableKey(data.publishableKey);
-            } catch (error) {
-                console.error('Error fetching Clerk publishable key:', error);
-            }
-        };
-
-        fetchClerkKey();
-    }, []);
-
-    if (!publishableKey) {
-        return <div>Loading...</div>; // Display a loading state while fetching the key
-    }
-
     return (
-        <ClerkProvider publishableKey={publishableKey}>
-            <MantineProvider
-                theme={{
-                    colorScheme: 'light',
-                    colors: {
-                        violet: ['#D9D9D9', '#BE8DFF'], // violet shades
-                        dark: ['#2A2A2A'], // dark shades
-                    },
-                    primaryColor: 'violet', // set violet as the primary color
-                    components: {
-                        Button: {
-                            styles: (theme) => ({
-                                root: {
-                                    borderRadius: '12px',
-                                    backgroundColor: '#D9D9D9',
-                                    color: '#2A2A2A',
-                                    transition: 'background-color 0.3s ease, color 0.3s ease',
-                                    '&:hover': {
-                                        backgroundColor: '#BE8DFF',
-                                        color: theme.white,
-                                    },
-                                    '&:active': {
-                                        backgroundColor: '#BE8DFF',
-                                        color: theme.white,
-                                    },
+
+        <ClerkProvider>
+    <SignedOut>
+      <SignInButton />
+    </SignedOut>
+    <SignedIn>
+      <UserButton />
+    </SignedIn>
+    <Component {...pageProps} />
+
+        <MantineProvider
+            theme={{
+                colorScheme: 'light', // jasny kolor
+                colors: {
+                    violet: ['#D9D9D9', '#BE8DFF'], // fiolet
+                    dark: ['#2A2A2A'], //
+                },
+                primaryColor: 'violet', // ustawienie fioletu na glowny kolor
+                components: {
+                    Button: {
+                        styles: (theme) => ({
+                            root: {
+                                borderRadius: '12px', // te takie ronded corners
+                                backgroundColor: '#D9D9D9', // szare tlo
+                                color: '#2A2A2A', // tekst kolor
+                                transition: 'background-color 0.3s ease, color 0.3s ease', // przejscie na hover
+                                '&:hover': {
+                                    backgroundColor: '#BE8DFF', // jasny fiolet kiedy sie hoveruje
+                                    color: theme.white, // bialy tekst podczas hovera
                                 },
-                            }),
-                        },
-                        Paper: {
-                            styles: () => ({
-                                root: {
-                                    padding: '24px',
-                                    borderRadius: '16px',
-                                    backgroundColor: '#FFFFFF',
-                                    boxShadow: '0 4px 16px rgba(0, 0, 0, 0.1)',
+                                '&:active': {
+                                    backgroundColor: '#BE8DFF', // fiolet jako glowny kolor
+                                    color: theme.white, // bialy tekst jesli to fiolet
                                 },
-                            }),
-                        },
+                            },
+                        }),
                     },
-                }}
-                withGlobalStyles
-                withNormalizeCSS
-            >
-                <Component {...pageProps} />
-            </MantineProvider>
+                    Paper: {
+                        styles: (theme) => ({
+                            root: {
+                                padding: '24px',
+                                borderRadius: '16px',
+                                backgroundColor: '#FFFFFF',
+                                boxShadow: '0 4px 16px rgba(0, 0, 0, 0.1)',
+                            },
+                        }),
+                    },
+                },
+            }}
+            withGlobalStyles
+            withNormalizeCSS
+        >
+            <Component {...pageProps} />
+        </MantineProvider>
         </ClerkProvider>
     );
 }
