@@ -1,0 +1,198 @@
+Technology
+• Programming
+  • Python
+    • Web Development (Django, Flask)
+    • Data Analysis
+    • Scripting
+    • Automation
+  • JavaScript
+    • Front-End Development
+    • Node.js
+    • React
+    • Vue.js
+  • HTML
+  • Java
+    • Android Development
+    • Spring Framework
+    • Enterprise Applications
+  • C++
+    • Game Development
+    • System Programming
+    • Real-Time Applications
+  • Pascal
+  • Assembler
+  • Fortran
+  • Scala
+• Cybersecurity
+  • Network Security
+  • Ethical Hacking
+  • Application Security
+  • Incident Response
+  • Cloud Security
+  • Penetration Testing
+  • Forensics
+• Electronics
+  • Circuit Design
+  • Microcontrollers
+  • Signal Processing
+  • Robotics
+  • IoT (Internet of Things)
+• Data Science
+  • Machine Learning
+    • Deep Learning
+    • NLP (Natural Language Processing)
+  • Data Visualization
+    • Tools (Tableau, Power BI)
+    • Dashboards
+  • Statistical Analysis
+    • Hypothesis Testing
+    • A/B Testing
+  • Data Engineering
+    • ETL Pipelines
+    • Data Warehousing
+• Design
+  • Graphic Design
+    • Adobe Photoshop
+    • Adobe Illustrator
+    • Logo Design
+  • UX/UI Design
+    • Prototyping
+    • Wireframing
+    • User Research
+  • Animation
+    • 2D Animation
+    • 3D Animation
+    • Motion Graphics
+________________________________________
+Culinary
+• Cooking
+  • Vegan Cooking
+  • Healthy Diet
+  • Baking
+    • Bread Making
+    • Pastry
+  • Grilling
+  • Slow Cooking
+  • International Cuisine
+    • Italian Cuisine
+    • Japanese Cuisine
+    • Mexican Cuisine
+• Beverages
+  • Coffee Making
+  • Cocktail Mixing
+  • Tea Brewing
+  • Wine Tasting
+  • Juice and Smoothie Preparation
+• Food Preservation
+  • Pickling and Fermentation
+  • Canning
+  • Freezing Techniques
+  • Dehydrating
+  • Smoking and Curing
+• Food Pairing and Flavor Science
+  • Herb and Spice Blending
+  • Flavor Combinations
+  • Molecular Gastronomy
+  • Wine and Food Pairing
+  • Cheese and Charcuterie Pairing
+________________________________________
+Beauty and Makeup
+• Makeup Application
+  • Eyeshadow Application
+  • Foundation Application
+  • Blush Application
+  • Baking (Makeup Technique)
+  • Bronzer Application
+________________________________________
+Art
+• Painting
+  • Watercolor
+  • Oil Painting
+  • Acrylic Painting
+  • Digital Painting
+  • Pastel Techniques
+• Sculpture
+  • Clay Sculpting
+  • Stone Carving
+  • Metal Sculpting
+  • Wood Carving
+  • 3D Printing for Sculpture
+• Music
+  • Instrumental
+    • Guitar
+    • Piano
+    • Drums
+  • Singing
+    • Vocal Training
+    • Harmony Singing
+  • Music Production
+    • Mixing and Mastering
+    • Sound Engineering
+________________________________________
+Languages
+• English
+• Spanish
+• French
+• German
+• Japanese
+• Chinese (Mandarin)
+• Arabic
+________________________________________
+Sports and Fitness
+• Physical Training
+  • Weightlifting
+  • Cardio Training
+  • CrossFit
+  • Yoga
+    • Hatha
+    • Vinyasa
+    • Ashtanga
+  • Pilates
+• Martial Arts
+  • Karate
+  • Judo
+  • Brazilian Jiu-Jitsu
+  • Muay Thai
+• Outdoor Activities
+  • Rock Climbing
+  • Hiking
+  • Survival Skills
+  • Kayaking
+________________________________________
+Handicrafts and DIY
+• Crafts
+  • Knitting
+  • Crochet
+  • Embroidery
+  • Macrame
+• DIY Home Improvement
+  • Woodworking
+  • Furniture Restoration
+  • Basic Plumbing
+  • Wall Painting Techniques
+________________________________________
+Professional Skills
+• Business and Management
+  • Project Management
+  • Leadership
+  • Agile and Scrum Methodologies
+  • Business Analysis
+• Finance
+  • Financial Planning
+  • Stock Market Basics
+  • Accounting Basics
+  • Cryptocurrency Basics
+• Marketing
+  • Social Media Marketing
+  • Content Marketing
+  • SEO (Search Engine Optimization)
+  • Email Marketing
+• Writing and Communication
+  • Creative Writing
+  • Copywriting
+  • Blogging
+  • Public Speaking
+• Photography and Video Production
+  • DSLR Photography
+  • Smartphone Photography
+  • Video Editing (Premiere Pro, Final Cut Pro)

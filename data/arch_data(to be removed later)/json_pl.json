@@ -1,0 +1,302 @@
+{
+  "Technologia": [
+    {
+      "id": 1,
+      "name": "Programowanie",
+      "tags": ["kodowanie", "oprogramowanie", "algorytmy", "rozwój", "rozwiązywanie problemów", "logika"],
+      "children": [
+        {
+          "id": 2,
+          "name": "JavaScript",
+          "parent": "Programowanie",
+          "tags": ["frontend", "tworzenie stron", "dynamiczne strony", "skrypty", "oparty na przeglądarkach", "interaktywność"],
+          "children": []
+        },
+        {
+          "id": 3,
+          "name": "Python",
+          "parent": "Programowanie",
+          "tags": ["backend", "data science", "uczenie maszynowe", "AI", "automatyzacja", "skrypty"],
+          "children": []
+        },
+        {
+          "id": 4,
+          "name": "Java",
+          "parent": "Programowanie",
+          "tags": ["korporacyjne", "cross-platform", "obiektowe", "skalowalność", "bezpieczeństwo", "wielowątkowość"],
+          "children": []
+        },
+        {
+          "id": 5,
+          "name": "C++",
+          "parent": "Programowanie",
+          "tags": ["wydajność", "programowanie systemowe", "obiektowe", "gry", "kontrola sprzętu", "złożoność"],
+          "children": []
+        },
+        {
+          "id": 6,
+          "name": "Ruby",
+          "parent": "Programowanie",
+          "tags": ["aplikacje webowe", "konwencje", "elegancja", "frameworki", "dynamiczny", "prostość"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Cyberbezpieczeństwo",
+      "tags": ["bezpieczeństwo", "ochrona sieci", "integralność danych", "zapory ogniowe", "szyfrowanie", "wykrywanie zagrożeń"],
+      "children": [
+        {
+          "id": 8,
+          "name": "Bezpieczeństwo Sieci",
+          "parent": "Cyberbezpieczeństwo",
+          "tags": ["zapory ogniowe", "wykrywanie intruzów", "VPN", "szyfrowanie", "ochrona danych", "zarządzanie ryzykiem"],
+          "children": []
+        },
+        {
+          "id": 9,
+          "name": "Etyczne Hacking",
+          "parent": "Cyberbezpieczeństwo",
+          "tags": ["testy penetracyjne", "wrażliwości", "naruszenia systemu", "przeciwdziałanie", "certyfikacja", "białe kapelusze"],
+          "children": []
+        },
+        {
+          "id": 10,
+          "name": "Bezpieczeństwo Aplikacji",
+          "parent": "Cyberbezpieczeństwo",
+          "tags": ["przegląd kodu", "testowanie bezpieczeństwa", "wrażliwości", "bezpieczne kodowanie", "OWASP", "najlepsze praktyki"],
+          "children": []
+        },
+        {
+          "id": 11,
+          "name": "Reakcja na Incydenty",
+          "parent": "Cyberbezpieczeństwo",
+          "tags": ["forensyka", "zarządzanie incydentami", "łagodzenie zagrożeń", "protokoły", "analiza", "przygotowanie"],
+          "children": []
+        },
+        {
+          "id": 12,
+          "name": "Bezpieczeństwo w Chmurze",
+          "parent": "Cyberbezpieczeństwo",
+          "tags": ["architektura chmurowa", "ochrona danych", "zgodność", "zarządzanie tożsamością", "wirtualizacja", "kontrole bezpieczeństwa"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Elektronika",
+      "tags": ["projektowanie obwodów", "komponenty", "systemy", "mikrokontrolery", "innowacje", "technologia"],
+      "children": [
+        {
+          "id": 14,
+          "name": "Projektowanie Obwodów",
+          "parent": "Elektronika",
+          "tags": ["schematy", "PCB", "komponenty", "symulacja", "diagnozowanie", "prototypowanie"],
+          "children": []
+        },
+        {
+          "id": 15,
+          "name": "Mikrokontrolery",
+          "parent": "Elektronika",
+          "tags": ["systemy wbudowane", "Arduino", "Raspberry Pi", "programowanie", "IoT", "automatyzacja"],
+          "children": []
+        },
+        {
+          "id": 16,
+          "name": "Przetwarzanie Sygnałów",
+          "parent": "Elektronika",
+          "tags": ["analogowe", "cyfrowe", "filtry", "modulacja", "analiza danych", "falowce"],
+          "children": []
+        },
+        {
+          "id": 17,
+          "name": "Robotyka",
+          "parent": "Elektronika",
+          "tags": ["automatyzacja", "czujniki", "aktuatory", "systemy sterowania", "programowanie", "AI"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Data Science",
+      "tags": ["analiza", "big data", "uczenie maszynowe", "statystyka", "wizualizacja danych", "wnioski"],
+      "children": [
+        {
+          "id": 19,
+          "name": "Uczenie Maszynowe",
+          "parent": "Data Science",
+          "tags": ["algorytmy", "szkolenie modeli", "sieci neuronowe", "analityka predykcyjna", "mining danych", "AI"],
+          "children": []
+        },
+        {
+          "id": 20,
+          "name": "Wizualizacja Danych",
+          "parent": "Data Science",
+          "tags": ["wykresy", "grafiki", "pulpity", "komunikacja wniosków", "narzędzia", "design"],
+          "children": []
+        },
+        {
+          "id": 21,
+          "name": "Analiza Statystyczna",
+          "parent": "Data Science",
+          "tags": ["prawdopodobieństwo", "interpretacja danych", "testy hipotez", "ankiety", "czyszczenie danych", "modelowanie"],
+          "children": []
+        }
+      ]
+    }
+  ],
+  "Kulinarne": [
+    {
+      "id": 22,
+      "name": "Gotowanie",
+      "tags": ["kuchnia", "przepisy", "zdrowa dieta", "techniki", "żywienie", "smaki"],
+      "children": [
+        {
+          "id": 23,
+          "name": "Gotowanie Wegańskie",
+          "parent": "Gotowanie",
+          "tags": ["wegański", "na bazie roślin", "przepisy", "bezmięsny", "żywienie", "środowiskowe"],
+          "children": []
+        },
+        {
+          "id": 24,
+          "name": "Zdrowa Dieta",
+          "parent": "Gotowanie",
+          "tags": ["zrównoważone posiłki", "niska kaloryczność", "wysokobiałkowe", "błonnik", "zdrowie", "wzmacniające energię"],
+          "children": []
+        },
+        {
+          "id": 25,
+          "name": "Pieczenie",
+          "parent": "Gotowanie",
+          "tags": ["piekarnik", "desery", "chleby", "ciasta", "techniki", "precyzja"],
+          "children": []
+        },
+        {
+          "id": 26,
+          "name": "Grillowanie",
+          "parent": "Gotowanie",
+          "tags": ["gotowanie na świeżym powietrzu", "węgiel", "smak", "techniki", "mięsa", "warzywa"],
+          "children": []
+        },
+        {
+          "id": 27,
+          "name": "Gotowanie na wolnym ogniu",
+          "parent": "Gotowanie",
+          "tags": ["gulasze", "smaki", "crockpot", "wygoda", "niska temperatura", "przygotowanie posiłków"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Prezentacja jedzenia",
+      "tags": ["estetyka", "podanie", "równowaga kolorów", "tekstura", "dekoracje", "kreatywność"],
+      "children": [
+        {
+          "id": 29,
+          "name": "Dekoracje",
+          "parent": "Prezentacja Jedzenia",
+          "tags": ["dekoracyjne", "zioła", "jadalne kwiaty", "wykończenie", "ulepszanie", "kontrast smaków"],
+          "children": []
+        },
+        {
+          "id": 30,
+          "name": "Techniki Podania",
+          "parent": "Prezentacja Jedzenia",
+          "tags": ["warstwowanie", "układ", "kontrast kolorów", "harmonia tekstur", "jadalny design", "równowaga przestrzenna"],
+          "children": []
+        },
+        {
+          "id": 31,
+          "name": "Tematyczne Prezentacje",
+          "parent": "Prezentacja Jedzenia",
+          "tags": ["wydarzenia", "celebracje", "kreatywne projekty", "motywy kulturowe", "opowiadanie", "zaangażowanie"],
+          "children": []
+        },
+        {
+          "id": 32,
+          "name": "Stylizacja Potraw",
+          "parent": "Prezentacja Jedzenia",
+          "tags": ["fotografia", "komercyjna", "media społecznościowe", "akcesoria", "oświetlenie", "kompozycja"],
+          "children": []
+        }
+      ]
+    }
+  ],
+  "Sztuka": [
+    {
+      "id": 33,
+      "name": "Malarstwo",
+      "tags": ["sztuki wizualne", "teoria koloru", "kreatywność", "ekspresja", "medium", "tekstury"],
+      "children": [
+        {
+          "id": 34,
+          "name": "Akwaforta",
+          "parent": "Malarstwo",
+          "tags": ["przezroczystość", "lekkość", "mieszanie", "papier", "warstwowanie", "miękkie krawędzie"],
+          "children": []
+        },
+        {
+          "id": 35,
+          "name": "Malarstwo Olejne",
+          "parent": "Malarstwo",
+          "tags": ["bogate kolory", "warstwowanie", "czas schnięcia", "płótno", "głębia", "tradycyjne"],
+          "children": []
+        },
+        {
+          "id": 36,
+          "name": "Malarstwo Akrylowe",
+          "parent": "Malarstwo",
+          "tags": ["szybkoschnące", "wszechstronne", "tekstura", "mieszanie kolorów", "płótno", "eksperymentowanie"],
+          "children": []
+        },
+        {
+          "id": 37,
+          "name": "Malarstwo Cyfrowe",
+          "parent": "Malarstwo",
+          "tags": ["technologia", "oprogramowanie", "kreatywność", "grafika", "warstwy", "wirtualne płótno"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Rzeźba",
+      "tags": ["sztuka 3D", "manipulacja materiałem", "ekspresja", "kształt", "forma", "tekstura"],
+      "children": [
+        {
+          "id": 39,
+          "name": "Rzeźbienie w Glinie",
+          "parent": "Rzeźba",
+          "tags": ["formowanie", "wypalanie", "glazura", "kształtowanie", "ceramika", "ręczne"],
+          "children": []
+        },
+        {
+          "id": 40,
+          "name": "Rzeźbienie w Kamieniu",
+          "parent": "Rzeźba",
+          "tags": ["dłuto", "młotek", "kamień", "tekstura", "trwałość", "detal"],
+          "children": []
+        },
+        {
+          "id": 41,
+          "name": "Rzeźbienie w Metalu",
+          "parent": "Rzeźba",
+          "tags": ["spawanie", "kowalstwo", "przemysłowe", "kreatywność", "trwałość", "design"],
+          "children": []
+        },
+        {
+          "id": 42,
+          "name": "Rzeźbienie w Drewnie",
+          "parent": "Rzeźba",
+          "tags": ["rękodzieło", "detal", "tekstura", "rzemieślnictwo", "narzędzia", "materiały naturalne"],
+          "children": []
+        }
+      ]
+    }
+  ]
+}

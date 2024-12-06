@@ -1,0 +1,63 @@
+.container {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.card {
+    margin-bottom: 20px;
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profileHeader {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.profileInfo {
+    margin-left: 15px;
+}
+
+.profileInfo h4 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333333;
+    font-family: sans-serif;
+}
+
+.profileInfo p {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #666666;
+    font-family: sans-serif;
+}
+
+.skills {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.skillButton {
+    background-color: #EFEFD0;
+    color: #333333;
+    border: 1px solid #cccccc;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skillButton:hover {
+    background-color: #ECE0F6;
+    color: #333333;
+}

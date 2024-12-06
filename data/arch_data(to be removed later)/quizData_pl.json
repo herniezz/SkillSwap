@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "question": "Jaką aktywność lubisz robić w wolnym czasie?",
+    "options": [
+      "Aktywność sportowa",
+      "Podziwiać sztukę",
+      "Zaszyć się w domu z książką"
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Jakie tematy najczęściej śledzisz w mediach lub internecie?",
+    "options": [
+      "Nowinki techniczne",
+      "Moda, najnowsze trendy",
+      "Podróże, inne ciekawe miejsca"
+    ]
+  },
+  {
+    "id": 3,
+    "question": "W jakiej dziedzinie chciałbyś rozwijać swoją wiedzę?",
+    "options": [
+      "Rzeczy technologiczne",
+      "Poznawanie ludzi",
+      "Rzeczy uspokajające umysł"
+    ]
+  }
+]

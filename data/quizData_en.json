@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "question": "1. What activity do you enjoy in your free time?",
+    "options": [
+      "Sports activity",
+      "Admiring art",
+      "Staying at home with a book"
+    ]
+  },
+  {
+    "id": 2,
+    "question": "2. What topics do you most often follow in media or online?",
+    "options": [
+      "Technical news",
+      "Fashion, latest trends",
+      "Travel, interesting places"
+    ]
+  },
+  {
+    "id": 3,
+    "question": "3. In which field would you like to develop your knowledge?",
+    "options": [
+      "Technology-related topics",
+      "Meeting new people",
+      "Mind-calming activities"
+    ]
+  }
+]
