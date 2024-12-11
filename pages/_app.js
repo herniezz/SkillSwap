@@ -5,21 +5,43 @@ import '@/styles/globals.css';
 
 export default function MyApp({ Component, pageProps }) {
     const [publishableKey, setPublishableKey] = useState(null);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
         // Fetch the Clerk publishable key from the backend
         const fetchClerkKey = async () => {
             try {
-                const response = await fetch('https://fast-peak-76057-7dc46f68d3e1.herokuapp.com/api/clerk-key');
+                const response = await fetch(
+                    'https://fast-peak-76057-7dc46f68d3e1.herokuapp.com/api/clerk-key',
+                    { cache: 'no-store' } // Ensure fresh data
+                );
+                console.log('API Fetch Response:', response);
+
+                if (!response.ok) {
+                    const errorData = await response.text();
+                    throw new Error(`Error ${response.status}: ${errorData}`);
+                }
+
                 const data = await response.json();
+                console.log('API Response JSON:', data);
+
+                if (!data.publishableKey) {
+                    throw new Error('Publishable key is missing in the response');
+                }
+
                 setPublishableKey(data.publishableKey);
             } catch (error) {
                 console.error('Error fetching Clerk publishable key:', error);
+                setError(error.message);
             }
         };
 
         fetchClerkKey();
     }, []);
+
+    if (error) {
+        return <div>Error: {error}</div>;
+    }
 
     if (!publishableKey) {
         return <div>Loading...</div>; // Display a loading state while fetching the key
