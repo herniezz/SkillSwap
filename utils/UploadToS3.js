@@ -1,3 +1,5 @@
+// UploadToS3.js
+
 export const uploadToS3 = async (file) => {
     if (!file) {
         throw new Error('No file provided for upload.');
@@ -23,8 +25,11 @@ export const uploadToS3 = async (file) => {
 
         // Step 2 - Upload the file to S3 using the signed URL
         const uploadResponse = await fetch(signedUrl, {
-            method: 'PUT',
-            headers: { 'Content-Type': fileType },
+            method: 'PUT', // Ensure this is 'PUT'
+            headers: {
+                'Content-Type': fileType,
+                'x-amz-acl': 'public-read' // Must match the ACL in the signed URL
+            },
             body: file,
         });
 
