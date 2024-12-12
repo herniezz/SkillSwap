@@ -4,9 +4,25 @@ const ImageUploader = () => {
     const [file, setFile] = useState(null);
     const [uploadedUrl, setUploadedUrl] = useState('');
     const [message, setMessage] = useState('');
+    const [isUploading, setIsUploading] = useState(false);
 
     const handleFileChange = (event) => {
-        setFile(event.target.files[0]);
+        const selectedFile = event.target.files[0];
+
+        // Validate file size and type
+        if (selectedFile && selectedFile.size > 5 * 1024 * 1024) {
+            setMessage('File size must be less than 5MB.');
+            event.target.value = null; // Clear the file input
+            return;
+        }
+        if (selectedFile && !['image/jpeg', 'image/png'].includes(selectedFile.type)) {
+            setMessage('Only JPG and PNG files are allowed.');
+            event.target.value = null; // Clear the file input
+            return;
+        }
+
+        setFile(selectedFile);
+        setMessage(''); // Clear any previous messages
     };
 
     const handleUpload = () => {
@@ -14,6 +30,8 @@ const ImageUploader = () => {
             setMessage('Please select a file to upload.');
             return;
         }
+
+        setIsUploading(true);
 
         const fileName = file.name;
         const fileType = file.type;
@@ -36,24 +54,45 @@ const ImageUploader = () => {
                 // Step 2: Upload the file to S3 using the signed URL
                 return fetch(signedUrl, {
                     method: 'PUT',
-                    headers: { 'Content-Type': fileType },
+                    headers: {
+                        'Content-Type': fileType,
+                        'x-amz-acl': 'public-read',
+                    },
                     body: file,
-                }).then(() => {
+                }).then((uploadResponse) => {
+                    if (!uploadResponse.ok) {
+                        throw new Error('Failed to upload to S3');
+                    }
                     setUploadedUrl(url); // The public URL of the uploaded file
                     setMessage('File uploaded successfully!');
                 });
             })
             .catch((error) => {
                 console.error('Error:', error);
-                setMessage('Failed to upload the file.');
-            });
+                if (error.message.includes('Failed to get signed URL')) {
+                    setMessage('Could not contact the server to generate a signed URL.');
+                } else if (error.message.includes('Failed to upload')) {
+                    setMessage('File upload to S3 failed.');
+                } else {
+                    setMessage('An unexpected error occurred.');
+                }
+            })
+            .finally(() => setIsUploading(false));
     };
 
     return (
         <div>
             <h1>Image Uploader</h1>
-            <input type="file" onChange={handleFileChange} />
-            <button onClick={handleUpload}>Upload</button>
+            <input
+                type="file"
+                onChange={handleFileChange}
+                aria-disabled={isUploading}
+                disabled={isUploading}
+            />
+            <button onClick={handleUpload} disabled={isUploading}>
+                {isUploading ? 'Uploading...' : 'Upload'}
+            </button>
+            {isUploading && <p>Uploading file, please wait...</p>}
             {message && <p>{message}</p>}
             {uploadedUrl && (
                 <div>

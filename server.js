@@ -4,6 +4,7 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
 
+
 // Import AWS SDK v3 modules
 const { S3Client, PutObjectCommand } = require('@aws-sdk/client-s3');
 const { getSignedUrl } = require('@aws-sdk/s3-request-presigner');
@@ -16,7 +17,7 @@ const allowedOrigins = [
     'https://herniezz.github.io',    // Production frontend
     'http://localhost:3000',        // Development frontend
     'http://127.0.0.1:3000',        // Additional development origin
-    // Add other origins as needed
+
 ];
 
 // Enable CORS with specific configuration
@@ -85,8 +86,11 @@ app.post('/api/images/sign', async (req, res) => {
         Bucket: process.env.S3_BUCKET,
         Key: uniqueFileName,
         ContentType: fileType,
-        ACL: 'public-read', // Must match the header in the PUT request
+        ACL: 'public-read', // Ensure this matches the headers sent by the frontend
     };
+    const command = new PutObjectCommand(params);
+    const signedUrl = await getSignedUrl(s3Client, command, { expiresIn: 60 });
+
 
     try {
         const command = new PutObjectCommand(params);
