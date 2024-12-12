@@ -1,0 +1,163 @@
+/* Import the Roboto Serif font with specific weights */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,300;0,600&display=swap');
+
+.backgroundGradient {
+    background: linear-gradient(180deg, #ffffff 0%, #f9f9f9 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Roboto Serif', serif;
+}
+
+.container {
+    max-width: 450px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.title {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: 'Roboto Serif', serif;
+    font-size: 20px;
+    font-weight: 300; /* Light */
+    color: #515151;
+    margin-bottom: 20px;
+}
+
+
+.optionsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.optionButton {
+    font-family: 'Roboto Serif', serif;
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    background-color: #D9D9D9;
+    color: #333;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.optionButton:hover {
+    background-color: #C4C4C4;
+}
+
+.selectedOption {
+    background-color: #ECE0F6 !important;
+}
+
+.nextButton {
+    font-family: 'Roboto Serif', serif;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 1em;
+    background-color: #BAFCE5;
+    color: #333;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nextButton:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+
+.nextButton:hover:not(:disabled) {
+    background-color: #a0f5d8;
+}
+
+/* Endcard Title */
+.endcardTitle {
+    font-family: 'Roboto Serif', serif;
+    font-size: 30px;
+    font-weight: 600; /* Semibold */
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Endcard Subtitle */
+.endcardSubtitle {
+    font-family: 'Roboto Serif', serif;
+    font-size: 20px;
+    font-weight: 300; /* Light */
+    color: #515151;
+    margin-bottom: 30px;
+}
+
+/* Skills Container */
+.skillsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Skill Item */
+.skillItem {
+    font-family: 'Roboto Serif', serif;
+    background-color: #ECE0F6;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 1em;
+    color: #333;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 10px;
+}
+.backButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    color: #333;
+    transition: color 0.2s ease;
+}
+
+.backButton:disabled {
+    cursor: not-allowed;
+    color: #ccc; /* Disabled state color */
+}
+
+.backButton:hover:not(:disabled) {
+    color: #000; /* Darker color on hover */
+}
+
+.question {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    flex: 1;
+    margin: 0;
+}
+

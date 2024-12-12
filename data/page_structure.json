@@ -1,0 +1,2172 @@
+{
+  "Technology": [
+    {
+      "id": 1,
+      "name": "Programming",
+      "tags": [
+        {
+          "id_tag": "p_cod",
+          "name": "coding"
+        },
+        {
+          "id_tag": "p_sof",
+          "name": "software"
+        },
+        {
+          "id_tag": "p_alg",
+          "name": "algorithms"
+        },
+        {
+          "id_tag": "p_dev",
+          "name": "development"
+        },
+        {
+          "id_tag": "p_log",
+          "name": "logic"
+        }
+      ],
+      "children": [
+        {
+          "id": 2,
+          "name": "Python",
+          "tags": [
+            {
+              "id_tag": "p_webdev",
+              "name": "web development"
+            },
+            {
+              "id_tag": "p_datana",
+              "name": "data analysis"
+            },
+            {
+              "id_tag": "p_scr",
+              "name": "scripting"
+            },
+            {
+              "id_tag": "p_aut",
+              "name": "automation"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 3,
+          "name": "JavaScript",
+          "tags": [
+            {
+              "id_tag": "p_frodev",
+              "name": "front-end development"
+            },
+            {
+              "id_tag": "p_nod",
+              "name": "node.js"
+            },
+            {
+              "id_tag": "p_rea",
+              "name": "react"
+            },
+            {
+              "id_tag": "p_vue",
+              "name": "vue.js"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 4,
+          "name": "HTML",
+          "tags": [],
+          "children": []
+        },
+        {
+          "id": 5,
+          "name": "Java",
+          "tags": [
+            {
+              "id_tag": "p_anddev",
+              "name": "android development"
+            },
+            {
+              "id_tag": "p_sprfra",
+              "name": "spring framework"
+            },
+            {
+              "id_tag": "p_entapp",
+              "name": "enterprise applications"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 6,
+          "name": "C++",
+          "tags": [
+            {
+              "id_tag": "p_gamdev",
+              "name": "game development"
+            },
+            {
+              "id_tag": "p_syspro",
+              "name": "system programming"
+            },
+            {
+              "id_tag": "p_reaapp",
+              "name": "real-time applications"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 7,
+          "name": "Pascal",
+          "tags": [],
+          "children": []
+        },
+        {
+          "id": 8,
+          "name": "Assembler",
+          "tags": [],
+          "children": []
+        },
+        {
+          "id": 9,
+          "name": "Fortran",
+          "tags": [],
+          "children": []
+        },
+        {
+          "id": 10,
+          "name": "Scala",
+          "tags": [],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Cybersecurity",
+      "tags": [
+        {
+          "id_tag": "c_netsec",
+          "name": "network security"
+        },
+        {
+          "id_tag": "c_ethhac",
+          "name": "ethical hacking"
+        },
+        {
+          "id_tag": "c_appsec",
+          "name": "application security"
+        },
+        {
+          "id_tag": "c_incres",
+          "name": "incident response"
+        },
+        {
+          "id_tag": "c_closec",
+          "name": "cloud security"
+        },
+        {
+          "id_tag": "c_pentes",
+          "name": "penetration testing"
+        },
+        {
+          "id_tag": "c_for",
+          "name": "forensics"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": 12,
+      "name": "Electronics",
+      "tags": [
+        {
+          "id_tag": "e_cirdes",
+          "name": "circuit design"
+        },
+        {
+          "id_tag": "e_mic",
+          "name": "microcontrollers"
+        },
+        {
+          "id_tag": "e_sigpro",
+          "name": "signal processing"
+        },
+        {
+          "id_tag": "e_rob",
+          "name": "robotics"
+        },
+        {
+          "id_tag": "e_iot",
+          "name": "iot"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": 13,
+      "name": "Data Science",
+      "tags": [],
+      "children": [
+        {
+          "id": 14,
+          "name": "Machine Learning",
+          "tags": [],
+          "children": [
+            {
+              "id": 15,
+              "name": "Deep Learning",
+              "tags": [],
+              "children": []
+            },
+            {
+              "id": 16,
+              "name": "NLP",
+              "tags": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "name": "Data Visualization",
+          "tags": [
+            {
+              "id_tag": "ds_too(tapowbi)",
+              "name": "tools (tableau, power bi)"
+            },
+            {
+              "id_tag": "ds_das",
+              "name": "dashboards"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 18,
+          "name": "Statistical Analysis",
+          "tags": [
+            {
+              "id_tag": "ds_hyptes",
+              "name": "hypothesis testing"
+            },
+            {
+              "id_tag": "ds_a/btes",
+              "name": "a/b testing"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 19,
+          "name": "Data Engineering",
+          "tags": [
+            {
+              "id_tag": "ds_etlpip",
+              "name": "etl pipelines"
+            },
+            {
+              "id_tag": "ds_datwar",
+              "name": "data warehousing"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Design",
+      "tags": [],
+      "children": [
+        {
+          "id": 21,
+          "name": "Graphic Design",
+          "tags": [
+            {
+              "id_tag": "d_adopho",
+              "name": "adobe photoshop"
+            },
+            {
+              "id_tag": "d_adoill",
+              "name": "adobe illustrator"
+            },
+            {
+              "id_tag": "d_logdes",
+              "name": "logo design"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 22,
+          "name": "UX/UI Design",
+          "tags": [
+            {
+              "id_tag": "d_pro",
+              "name": "prototyping"
+            },
+            {
+              "id_tag": "d_wir",
+              "name": "wireframing"
+            },
+            {
+              "id_tag": "d_useres",
+              "name": "user research"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 23,
+          "name": "Animation",
+          "tags": [
+            {
+              "id_tag": "d_2dani",
+              "name": "2d animation"
+            },
+            {
+              "id_tag": "d_3dani",
+              "name": "3d animation"
+            },
+            {
+              "id_tag": "d_motgra",
+              "name": "motion graphics"
+            }
+          ],
+          "children": []
+        }
+      ]
+    }
+  ],
+  "Culinary": [
+    {
+      "id": 24,
+      "name": "Cooking",
+      "tags": [],
+      "children": [
+        {
+          "id": 25,
+          "name": "Vegan Cooking",
+          "tags": [],
+          "children": []
+        },
+        {
+          "id": 26,
+          "name": "Healthy Diet",
+          "tags": [],
+          "children": []
+        },
+        {
+          "id": 27,
+          "name": "Baking",
+          "tags": [],
+          "children": [
+            {
+              "id": 28,
+              "name": "Bread Making",
+              "tags": [],
+              "children": []
+            },
+            {
+              "id": 29,
+              "name": "Pastry",
+              "tags": [],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 30,
+          "name": "Grilling",
+          "tags": [],
+          "children": []
+        },
+        {
+          "id": 31,
+          "name": "Slow Cooking",
+          "tags": [],
+          "children": []
+        },
+        {
+          "id": 32,
+          "name": "International Cuisine",
+          "tags": [],
+          "children": [
+            {
+              "id": 33,
+              "name": "Italian Cuisine",
+              "tags": [],
+              "children": []
+            },
+            {
+              "id": 34,
+              "name": "Japanese Cuisine",
+              "tags": [],
+              "children": []
+            },
+            {
+              "id": 35,
+              "name": "Mexican Cuisine",
+              "tags": [],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Beverages",
+      "tags": [],
+      "children": [
+        {
+          "id": 37,
+          "name": "Coffee Making",
+          "tags": [],
+          "children": []
+        },
+        {
+          "id": 38,
+          "name": "Cocktail Mixing",
+          "tags": [],
+          "children": []
+        },
+        {
+          "id": 39,
+          "name": "Tea Brewing",
+          "tags": [],
+          "children": []
+        },
+        {
+          "id": 40,
+          "name": "Wine Tasting",
+          "tags": [],
+          "children": []
+        },
+        {
+          "id": 41,
+          "name": "Juice and Smoothie Preparation",
+          "tags": [],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Food Preservation",
+      "tags": [],
+      "children": [
+        {
+          "id": 43,
+          "name": "Pickling and Fermentation",
+          "tags": [],
+          "children": []
+        },
+        {
+          "id": 44,
+          "name": "Canning",
+          "tags": [],
+          "children": []
+        },
+        {
+          "id": 45,
+          "name": "Freezing Techniques",
+          "tags": [],
+          "children": []
+        },
+        {
+          "id": 46,
+          "name": "Dehydrating",
+          "tags": [],
+          "children": []
+        },
+        {
+          "id": 47,
+          "name": "Smoking and Curing",
+          "tags": [],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Food Pairing and Flavor Science",
+      "tags": [],
+      "children": [
+        {
+          "id": 49,
+          "name": "Herb and Spice Blending",
+          "tags": [],
+          "children": []
+        },
+        {
+          "id": 50,
+          "name": "Flavor Combinations",
+          "tags": [],
+          "children": []
+        },
+        {
+          "id": 51,
+          "name": "Molecular Gastronomy",
+          "tags": [],
+          "children": []
+        },
+        {
+          "id": 52,
+          "name": "Wine and Food Pairing",
+          "tags": [],
+          "children": []
+        },
+        {
+          "id": 53,
+          "name": "Cheese and Charcuterie Pairing",
+          "tags": [],
+          "children": []
+        }
+      ]
+    }
+  ],
+  "Beauty and Makeup": [
+    {
+      "id": 54,
+      "name": "Makeup Application",
+      "tags": [],
+      "children": [
+        {
+          "id": 55,
+          "name": "Eyeshadow Application",
+          "tags": [],
+          "children": []
+        },
+        {
+          "id": 56,
+          "name": "Foundation Application",
+          "tags": [],
+          "children": []
+        },
+        {
+          "id": 57,
+          "name": "Blush Application",
+          "tags": [],
+          "children": []
+        },
+        {
+          "id": 58,
+          "name": "Baking (Makeup Technique)",
+          "tags": [],
+          "children": []
+        },
+        {
+          "id": 59,
+          "name": "Bronzer Application",
+          "tags": [],
+          "children": []
+        }
+      ]
+    }
+  ],
+  "Art": [
+    {
+      "id": 60,
+      "name": "Painting",
+      "tags": [
+        {
+          "id_tag": "p_art",
+          "name": "art"
+        },
+        {
+          "id_tag": "p_visexp",
+          "name": "visual expression"
+        },
+        {
+          "id_tag": "p_colthe",
+          "name": "color theory"
+        },
+        {
+          "id_tag": "c_cre",
+          "name": "creativity"
+        }
+      ],
+      "children": [
+        {
+          "id": 61,
+          "name": "Watercolor",
+          "tags": [
+            {
+              "id_tag": "p_wat",
+              "name": "water-based"
+            },
+            {
+              "id_tag": "p_flu",
+              "name": "fluid"
+            },
+            {
+              "id_tag": "p_tra",
+              "name": "transparent"
+            },
+            {
+              "id_tag": "p_del",
+              "name": "delicate"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 62,
+          "name": "Oil Painting",
+          "tags": [
+            {
+              "id_tag": "p_oil",
+              "name": "oil-based"
+            },
+            {
+              "id_tag": "p_vivcol",
+              "name": "vivid colors"
+            },
+            {
+              "id_tag": "p_lay",
+              "name": "layering"
+            },
+            {
+              "id_tag": "p_rea",
+              "name": "realism"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 63,
+          "name": "Acrylic Painting",
+          "tags": [
+            {
+              "id_tag": "p_ver",
+              "name": "versatile"
+            },
+            {
+              "id_tag": "p_fas",
+              "name": "fast-drying"
+            },
+            {
+              "id_tag": "s_mod",
+              "name": "modern"
+            },
+            {
+              "id_tag": "p_lay",
+              "name": "layering"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 64,
+          "name": "Digital Painting",
+          "tags": [
+            {
+              "id_tag": "p_digtoo",
+              "name": "digital tools"
+            },
+            {
+              "id_tag": "s_tec",
+              "name": "technology"
+            },
+            {
+              "id_tag": "p_cre",
+              "name": "creative"
+            },
+            {
+              "id_tag": "p_ani",
+              "name": "animation"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 65,
+          "name": "Pastel Techniques",
+          "tags": [
+            {
+              "id_tag": "p_sofcol",
+              "name": "soft colors"
+            },
+            {
+              "id_tag": "p_dra",
+              "name": "drawing"
+            },
+            {
+              "id_tag": "p_lay",
+              "name": "layering"
+            },
+            {
+              "id_tag": "s_tex",
+              "name": "texture"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "name": "Sculpture",
+      "tags": [
+        {
+          "id_tag": "s_3dart",
+          "name": "3D art"
+        },
+        {
+          "id_tag": "s_matman",
+          "name": "material manipulation"
+        },
+        {
+          "id_tag": "s_for",
+          "name": "form"
+        },
+        {
+          "id_tag": "s_cra",
+          "name": "craftsmanship"
+        }
+      ],
+      "children": [
+        {
+          "id": 67,
+          "name": "Clay Sculpting",
+          "tags": [
+            {
+              "id_tag": "s_cer",
+              "name": "ceramic"
+            },
+            {
+              "id_tag": "s_han",
+              "name": "handcraft"
+            },
+            {
+              "id_tag": "s_fle",
+              "name": "flexible"
+            },
+            {
+              "id_tag": "s_tex",
+              "name": "texture"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 68,
+          "name": "Stone Carving",
+          "tags": [
+            {
+              "id_tag": "s_harmat",
+              "name": "hard materials"
+            },
+            {
+              "id_tag": "s_chi",
+              "name": "chiseling"
+            },
+            {
+              "id_tag": "s_dur",
+              "name": "durable"
+            },
+            {
+              "id_tag": "s_anc",
+              "name": "ancient"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 69,
+          "name": "Metal Sculpting",
+          "tags": [
+            {
+              "id_tag": "s_wel",
+              "name": "welding"
+            },
+            {
+              "id_tag": "s_ind",
+              "name": "industrial"
+            },
+            {
+              "id_tag": "s_mod",
+              "name": "modern"
+            },
+            {
+              "id_tag": "s_dur",
+              "name": "durability"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 70,
+          "name": "Wood Carving",
+          "tags": [
+            {
+              "id_tag": "s_natmat",
+              "name": "natural materials"
+            },
+            {
+              "id_tag": "s_hantoo",
+              "name": "hand tools"
+            },
+            {
+              "id_tag": "s_fur",
+              "name": "furniture"
+            },
+            {
+              "id_tag": "s_cra",
+              "name": "craft"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 71,
+          "name": "3D Printing for Sculpture",
+          "tags": [
+            {
+              "id_tag": "s_tec",
+              "name": "technology"
+            },
+            {
+              "id_tag": "s_inn",
+              "name": "innovation"
+            },
+            {
+              "id_tag": "s_pre",
+              "name": "precision"
+            },
+            {
+              "id_tag": "s_des",
+              "name": "design"
+            }
+          ],
+          "children": []
+        }
+      ]
+    }
+  ],
+  "Music": [
+    {
+      "id": 72,
+      "name": "Instrumental",
+      "tags": [
+        {
+          "id_tag": "i_musins",
+          "name": "musical instruments"
+        },
+        {
+          "id_tag": "i_per",
+          "name": "performance"
+        },
+        {
+          "id_tag": "i_com",
+          "name": "composition"
+        },
+        {
+          "id_tag": "i_orc",
+          "name": "orchestra"
+        }
+      ],
+      "children": [
+        {
+          "id": 73,
+          "name": "Guitar",
+          "tags": [
+            {
+              "id_tag": "i_strins",
+              "name": "string instrument"
+            },
+            {
+              "id_tag": "i_aco",
+              "name": "acoustic"
+            },
+            {
+              "id_tag": "i_ele",
+              "name": "electric"
+            },
+            {
+              "id_tag": "i_solper",
+              "name": "solo performance"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 74,
+          "name": "Piano",
+          "tags": [
+            {
+              "id_tag": "i_keyins",
+              "name": "keyboard instrument"
+            },
+            {
+              "id_tag": "i_cla",
+              "name": "classical"
+            },
+            {
+              "id_tag": "i_grapia",
+              "name": "grand piano"
+            },
+            {
+              "id_tag": "i_per",
+              "name": "performance"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 75,
+          "name": "Drums",
+          "tags": [
+            {
+              "id_tag": "i_per",
+              "name": "percussion"
+            },
+            {
+              "id_tag": "i_rhy",
+              "name": "rhythm"
+            },
+            {
+              "id_tag": "i_drukit",
+              "name": "drum kit"
+            },
+            {
+              "id_tag": "i_bea",
+              "name": "beat"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "name": "Singing",
+      "tags": [
+        {
+          "id_tag": "s_vocper",
+          "name": "vocal performance"
+        },
+        {
+          "id_tag": "s_voitra",
+          "name": "voice training"
+        },
+        {
+          "id_tag": "s_har",
+          "name": "harmony"
+        },
+        {
+          "id_tag": "s_chomus",
+          "name": "choral music"
+        }
+      ],
+      "children": [
+        {
+          "id": 77,
+          "name": "Vocal Training",
+          "tags": [
+            {
+              "id_tag": "s_voitec",
+              "name": "voice technique"
+            },
+            {
+              "id_tag": "s_ranexp",
+              "name": "range expansion"
+            },
+            {
+              "id_tag": "pt_breexe",
+              "name": "breathing exercises"
+            },
+            {
+              "id_tag": "s_pitcon",
+              "name": "pitch control"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 78,
+          "name": "Harmony Singing",
+          "tags": [
+            {
+              "id_tag": "s_vocarr",
+              "name": "vocal arrangement"
+            },
+            {
+              "id_tag": "s_due",
+              "name": "duet"
+            },
+            {
+              "id_tag": "s_cho",
+              "name": "choir"
+            },
+            {
+              "id_tag": "s_thrhar",
+              "name": "three-part harmony"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "name": "Music Production",
+      "tags": [
+        {
+          "id_tag": "mp_rec",
+          "name": "recording"
+        },
+        {
+          "id_tag": "mp_mix",
+          "name": "mixing"
+        },
+        {
+          "id_tag": "mp_mas",
+          "name": "mastering"
+        },
+        {
+          "id_tag": "mp_soueng",
+          "name": "sound engineering"
+        }
+      ],
+      "children": [
+        {
+          "id": 80,
+          "name": "Mixing and Mastering",
+          "tags": [
+            {
+              "id_tag": "mp_audeng",
+              "name": "audio engineering"
+            },
+            {
+              "id_tag": "mp_souedi",
+              "name": "sound editing"
+            },
+            {
+              "id_tag": "mp_stuequ",
+              "name": "studio equipment"
+            },
+            {
+              "id_tag": "mp_effpro",
+              "name": "effects processing"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 81,
+          "name": "Sound Engineering",
+          "tags": [
+            {
+              "id_tag": "mp_acotre",
+              "name": "acoustic treatment"
+            },
+            {
+              "id_tag": "mp_audmix",
+              "name": "audio mixing"
+            },
+            {
+              "id_tag": "mp_audmas",
+              "name": "audio mastering"
+            },
+            {
+              "id_tag": "mp_recstu",
+              "name": "recording studio"
+            }
+          ],
+          "children": []
+        }
+      ]
+    }
+  ],
+  "Languages": [
+    {
+      "id": 82,
+      "name": "English",
+      "tags": [
+        {
+          "id_tag": "e_lan",
+          "name": "language"
+        },
+        {
+          "id_tag": "e_lin",
+          "name": "linguistics"
+        },
+        {
+          "id_tag": "e_com",
+          "name": "communication"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": 83,
+      "name": "Spanish",
+      "tags": [
+        {
+          "id_tag": "f_romlan",
+          "name": "romance language"
+        },
+        {
+          "id_tag": "s_spadia",
+          "name": "spanish dialects"
+        },
+        {
+          "id_tag": "s_latamecul",
+          "name": "latin american culture"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": 84,
+      "name": "French",
+      "tags": [
+        {
+          "id_tag": "f_romlan",
+          "name": "romance language"
+        },
+        {
+          "id_tag": "f_fra",
+          "name": "francophone"
+        },
+        {
+          "id_tag": "f_lit",
+          "name": "literature"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": 85,
+      "name": "German",
+      "tags": [
+        {
+          "id_tag": "g_gerlan",
+          "name": "germanic language"
+        },
+        {
+          "id_tag": "g_linroo",
+          "name": "linguistic roots"
+        },
+        {
+          "id_tag": "g_gercul",
+          "name": "german culture"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": 86,
+      "name": "Japanese",
+      "tags": [
+        {
+          "id_tag": "c(_asilan",
+          "name": "asian language"
+        },
+        {
+          "id_tag": "j_japcul",
+          "name": "japanese culture"
+        },
+        {
+          "id_tag": "j_kan",
+          "name": "kana"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": 87,
+      "name": "Chinese (Mandarin)",
+      "tags": [
+        {
+          "id_tag": "c(_asilan",
+          "name": "asian language"
+        },
+        {
+          "id_tag": "c(_tonlan",
+          "name": "tonal language"
+        },
+        {
+          "id_tag": "c(_chi",
+          "name": "china"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": 88,
+      "name": "Arabic",
+      "tags": [
+        {
+          "id_tag": "a_semlan",
+          "name": "semitic language"
+        },
+        {
+          "id_tag": "a_aracul",
+          "name": "arabic culture"
+        },
+        {
+          "id_tag": "a_mideascul",
+          "name": "middle eastern culture"
+        }
+      ],
+      "children": []
+    }
+  ],
+  "Sports and Fitness": [
+    {
+      "id": 89,
+      "name": "Physical Training",
+      "tags": [
+        {
+          "id_tag": "pt_strtra",
+          "name": "strength training"
+        },
+        {
+          "id_tag": "pt_car",
+          "name": "cardio"
+        },
+        {
+          "id_tag": "pt_weilos",
+          "name": "weight loss"
+        },
+        {
+          "id_tag": "pt_musbui",
+          "name": "muscle building"
+        }
+      ],
+      "children": [
+        {
+          "id": 90,
+          "name": "Weightlifting",
+          "tags": [
+            {
+              "id_tag": "pt_bar",
+              "name": "barbell"
+            },
+            {
+              "id_tag": "pt_dea",
+              "name": "deadlift"
+            },
+            {
+              "id_tag": "pt_squ",
+              "name": "squats"
+            },
+            {
+              "id_tag": "pt_mushyp",
+              "name": "muscle hypertrophy"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 91,
+          "name": "Cardio Training",
+          "tags": [
+            {
+              "id_tag": "pt_run",
+              "name": "running"
+            },
+            {
+              "id_tag": "pt_cyc",
+              "name": "cycling"
+            },
+            {
+              "id_tag": "pt_hii",
+              "name": "HIIT"
+            },
+            {
+              "id_tag": "pt_end",
+              "name": "endurance"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 92,
+          "name": "CrossFit",
+          "tags": [
+            {
+              "id_tag": "pt_higtra",
+              "name": "high-intensity training"
+            },
+            {
+              "id_tag": "pt_funfit",
+              "name": "functional fitness"
+            },
+            {
+              "id_tag": "pt_olylif",
+              "name": "Olympic lifting"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 93,
+          "name": "Yoga",
+          "tags": [
+            {
+              "id_tag": "pt_min",
+              "name": "mindfulness"
+            },
+            {
+              "id_tag": "pt_fle",
+              "name": "flexibility"
+            },
+            {
+              "id_tag": "pt_breexe",
+              "name": "breathing exercises"
+            }
+          ],
+          "children": [
+            {
+              "id": 94,
+              "name": "Hatha",
+              "tags": [
+                {
+                  "id_tag": "pt_pos",
+                  "name": "postures"
+                },
+                {
+                  "id_tag": "pt_ali",
+                  "name": "alignment"
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": 95,
+              "name": "Vinyasa",
+              "tags": [
+                {
+                  "id_tag": "pt_flo",
+                  "name": "flow"
+                },
+                {
+                  "id_tag": "pt_dynmov",
+                  "name": "dynamic movement"
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": 96,
+              "name": "Ashtanga",
+              "tags": [
+                {
+                  "id_tag": "pt_tra",
+                  "name": "traditional"
+                },
+                {
+                  "id_tag": "pt_setseq",
+                  "name": "set sequence"
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 97,
+          "name": "Pilates",
+          "tags": [
+            {
+              "id_tag": "pt_corstr",
+              "name": "core strength"
+            },
+            {
+              "id_tag": "pt_bretec",
+              "name": "breathing techniques"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "name": "Martial Arts",
+      "tags": [
+        {
+          "id_tag": "ma_sel",
+          "name": "self-defense"
+        },
+        {
+          "id_tag": "ma_dis",
+          "name": "discipline"
+        },
+        {
+          "id_tag": "ma_com",
+          "name": "combat"
+        }
+      ],
+      "children": [
+        {
+          "id": 99,
+          "name": "Karate",
+          "tags": [
+            {
+              "id_tag": "ma_str",
+              "name": "striking"
+            },
+            {
+              "id_tag": "ma_kat",
+              "name": "kata"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 100,
+          "name": "Judo",
+          "tags": [
+            {
+              "id_tag": "ma_gra",
+              "name": "grappling"
+            },
+            {
+              "id_tag": "ma_thrtec",
+              "name": "throwing techniques"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 101,
+          "name": "Brazilian Jiu-Jitsu",
+          "tags": [
+            {
+              "id_tag": "ma_grofig",
+              "name": "ground fighting"
+            },
+            {
+              "id_tag": "ma_sub",
+              "name": "submissions"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 102,
+          "name": "Muay Thai",
+          "tags": [
+            {
+              "id_tag": "ma_str",
+              "name": "strikes"
+            },
+            {
+              "id_tag": "ma_kne",
+              "name": "knees"
+            },
+            {
+              "id_tag": "ma_elb",
+              "name": "elbows"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "name": "Outdoor Activities",
+      "tags": [
+        {
+          "id_tag": "oa_adv",
+          "name": "adventure"
+        },
+        {
+          "id_tag": "oa_exp",
+          "name": "exploration"
+        },
+        {
+          "id_tag": "oa_nat",
+          "name": "nature"
+        }
+      ],
+      "children": [
+        {
+          "id": 104,
+          "name": "Rock Climbing",
+          "tags": [
+            {
+              "id_tag": "oa_bou",
+              "name": "bouldering"
+            },
+            {
+              "id_tag": "oa_toprop",
+              "name": "top rope"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 105,
+          "name": "Hiking",
+          "tags": [
+            {
+              "id_tag": "oa_tra",
+              "name": "trail"
+            },
+            {
+              "id_tag": "oa_mouhik",
+              "name": "mountain hiking"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 106,
+          "name": "Survival Skills",
+          "tags": [
+            {
+              "id_tag": "oa_wil",
+              "name": "wilderness"
+            },
+            {
+              "id_tag": "oa_firsta",
+              "name": "fire starting"
+            },
+            {
+              "id_tag": "oa_shebui",
+              "name": "shelter building"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 107,
+          "name": "Kayaking",
+          "tags": [
+            {
+              "id_tag": "oa_pad",
+              "name": "paddling"
+            },
+            {
+              "id_tag": "oa_whi",
+              "name": "whitewater"
+            }
+          ],
+          "children": []
+        }
+      ]
+    }
+  ],
+  "Handicrafts and DIY": [
+    {
+      "id": 108,
+      "name": "Crafts",
+      "tags": [
+        {
+          "id_tag": "c_han",
+          "name": "handmade"
+        },
+        {
+          "id_tag": "c_cre",
+          "name": "creativity"
+        },
+        {
+          "id_tag": "c_tex",
+          "name": "textiles"
+        }
+      ],
+      "children": [
+        {
+          "id": 109,
+          "name": "Knitting",
+          "tags": [
+            {
+              "id_tag": "c_yar",
+              "name": "yarn"
+            },
+            {
+              "id_tag": "c_nee",
+              "name": "needles"
+            },
+            {
+              "id_tag": "c_knisti",
+              "name": "knit stitches"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 110,
+          "name": "Crochet",
+          "tags": [
+            {
+              "id_tag": "c_hoo",
+              "name": "hook"
+            },
+            {
+              "id_tag": "c_sti",
+              "name": "stitches"
+            },
+            {
+              "id_tag": "c_ami",
+              "name": "amigurumi"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 111,
+          "name": "Embroidery",
+          "tags": [
+            {
+              "id_tag": "c_thr",
+              "name": "thread"
+            },
+            {
+              "id_tag": "c_nee",
+              "name": "needlework"
+            },
+            {
+              "id_tag": "c_stitec",
+              "name": "stitching techniques"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 112,
+          "name": "Macrame",
+          "tags": [
+            {
+              "id_tag": "c_kno",
+              "name": "knots"
+            },
+            {
+              "id_tag": "c_cor",
+              "name": "cord"
+            },
+            {
+              "id_tag": "c_walhan",
+              "name": "wall hangings"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 113,
+      "name": "DIY Home Improvement",
+      "tags": [
+        {
+          "id_tag": "dhi_homrep",
+          "name": "home repair"
+        },
+        {
+          "id_tag": "dhi_mai",
+          "name": "maintenance"
+        },
+        {
+          "id_tag": "dhi_imp",
+          "name": "improvement"
+        }
+      ],
+      "children": [
+        {
+          "id": 114,
+          "name": "Woodworking",
+          "tags": [
+            {
+              "id_tag": "dhi_car",
+              "name": "carpentry"
+            },
+            {
+              "id_tag": "dhi_wootoo",
+              "name": "woodworking tools"
+            },
+            {
+              "id_tag": "dhi_furmak",
+              "name": "furniture making"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 115,
+          "name": "Furniture Restoration",
+          "tags": [
+            {
+              "id_tag": "dhi_ref",
+              "name": "refinishing"
+            },
+            {
+              "id_tag": "dhi_upc",
+              "name": "upcycling"
+            },
+            {
+              "id_tag": "dhi_woores",
+              "name": "wood restoration"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 116,
+          "name": "Basic Plumbing",
+          "tags": [
+            {
+              "id_tag": "dhi_pip",
+              "name": "pipes"
+            },
+            {
+              "id_tag": "dhi_watsys",
+              "name": "water systems"
+            },
+            {
+              "id_tag": "dhi_learep",
+              "name": "leak repairs"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 117,
+          "name": "Wall Painting Techniques",
+          "tags": [
+            {
+              "id_tag": "dhi_pai",
+              "name": "painting"
+            },
+            {
+              "id_tag": "dhi_brutec",
+              "name": "brush techniques"
+            },
+            {
+              "id_tag": "dhi_walfin",
+              "name": "wall finishes"
+            }
+          ],
+          "children": []
+        }
+      ]
+    }
+  ],
+  "Professional Skills": [
+    {
+      "id": 118,
+      "name": "Business and Management",
+      "tags": [
+        {
+          "id_tag": "bam_busstr",
+          "name": "business strategy"
+        },
+        {
+          "id_tag": "bam_lea",
+          "name": "leadership"
+        },
+        {
+          "id_tag": "bam_org",
+          "name": "organization"
+        }
+      ],
+      "children": [
+        {
+          "id": 119,
+          "name": "Project Management",
+          "tags": [
+            {
+              "id_tag": "bam_propla",
+              "name": "project planning"
+            },
+            {
+              "id_tag": "bam_resman",
+              "name": "resource management"
+            },
+            {
+              "id_tag": "bam_tasdel",
+              "name": "task delegation"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 120,
+          "name": "Leadership",
+          "tags": [
+            {
+              "id_tag": "bam_teabui",
+              "name": "team building"
+            },
+            {
+              "id_tag": "bam_decmak",
+              "name": "decision making"
+            },
+            {
+              "id_tag": "bam_mot",
+              "name": "motivation"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 121,
+          "name": "Agile and Scrum Methodologies",
+          "tags": [
+            {
+              "id_tag": "bam_agi",
+              "name": "Agile"
+            },
+            {
+              "id_tag": "bam_scrfra",
+              "name": "Scrum framework"
+            },
+            {
+              "id_tag": "bam_spr",
+              "name": "sprints"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 122,
+          "name": "Business Analysis",
+          "tags": [
+            {
+              "id_tag": "bam_reqgat",
+              "name": "requirements gathering"
+            },
+            {
+              "id_tag": "bam_stacom",
+              "name": "stakeholder communication"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 123,
+      "name": "Finance",
+      "tags": [
+        {
+          "id_tag": "f_inv",
+          "name": "investment"
+        },
+        {
+          "id_tag": "f_pla",
+          "name": "planning"
+        },
+        {
+          "id_tag": "f_ana",
+          "name": "analysis"
+        }
+      ],
+      "children": [
+        {
+          "id": 124,
+          "name": "Financial Planning",
+          "tags": [
+            {
+              "id_tag": "f_bud",
+              "name": "budgeting"
+            },
+            {
+              "id_tag": "f_sav",
+              "name": "saving"
+            },
+            {
+              "id_tag": "f_retpla",
+              "name": "retirement planning"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 125,
+          "name": "Stock Market Basics",
+          "tags": [
+            {
+              "id_tag": "f_sto",
+              "name": "stocks"
+            },
+            {
+              "id_tag": "f_inv",
+              "name": "investing"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 126,
+          "name": "Accounting Basics",
+          "tags": [
+            {
+              "id_tag": "f_boo",
+              "name": "bookkeeping"
+            },
+            {
+              "id_tag": "f_finsta",
+              "name": "financial statements"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 127,
+          "name": "Cryptocurrency Basics",
+          "tags": [
+            {
+              "id_tag": "f_blo",
+              "name": "blockchain"
+            },
+            {
+              "id_tag": "f_cry",
+              "name": "cryptocurrencies"
+            },
+            {
+              "id_tag": "f_bit",
+              "name": "Bitcoin"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 128,
+      "name": "Marketing",
+      "tags": [
+        {
+          "id_tag": "m_digmar",
+          "name": "digital marketing"
+        },
+        {
+          "id_tag": "m_adv",
+          "name": "advertising"
+        },
+        {
+          "id_tag": "m_constr",
+          "name": "content strategy"
+        }
+      ],
+      "children": [
+        {
+          "id": 129,
+          "name": "Social Media Marketing",
+          "tags": [
+            {
+              "id_tag": "m_fac",
+              "name": "Facebook"
+            },
+            {
+              "id_tag": "m_ins",
+              "name": "Instagram"
+            },
+            {
+              "id_tag": "m_tik",
+              "name": "TikTok"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 130,
+          "name": "Content Marketing",
+          "tags": [
+            {
+              "id_tag": "m_blo",
+              "name": "blogging"
+            },
+            {
+              "id_tag": "m_seo",
+              "name": "SEO"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 131,
+          "name": "SEO (Search Engine Optimization)",
+          "tags": [
+            {
+              "id_tag": "m_key",
+              "name": "keywords"
+            },
+            {
+              "id_tag": "m_ran",
+              "name": "ranking"
+            },
+            {
+              "id_tag": "m_on-seo",
+              "name": "on-page SEO"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 132,
+          "name": "Email Marketing",
+          "tags": [
+            {
+              "id_tag": "m_emalis",
+              "name": "email lists"
+            },
+            {
+              "id_tag": "m_new",
+              "name": "newsletters"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 133,
+      "name": "Writing and Communication",
+      "tags": [
+        {
+          "id_tag": "wac_crewri",
+          "name": "creative writing"
+        },
+        {
+          "id_tag": "wac_cop",
+          "name": "copywriting"
+        },
+        {
+          "id_tag": "wac_pubspe",
+          "name": "public speaking"
+        }
+      ],
+      "children": [
+        {
+          "id": 134,
+          "name": "Creative Writing",
+          "tags": [
+            {
+              "id_tag": "wac_fic",
+              "name": "fiction"
+            },
+            {
+              "id_tag": "wac_non",
+              "name": "non-fiction"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 135,
+          "name": "Copywriting",
+          "tags": [
+            {
+              "id_tag": "wac_adv",
+              "name": "advertisements"
+            },
+            {
+              "id_tag": "wac_marcop",
+              "name": "marketing copy"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 136,
+          "name": "Blogging",
+          "tags": [
+            {
+              "id_tag": "wac_art",
+              "name": "articles"
+            },
+            {
+              "id_tag": "wac_conwri",
+              "name": "content writing"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 137,
+          "name": "Public Speaking",
+          "tags": [
+            {
+              "id_tag": "wac_pre",
+              "name": "presentations"
+            },
+            {
+              "id_tag": "wac_spewri",
+              "name": "speech writing"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 138,
+      "name": "Photography and Video Production",
+      "tags": [
+        {
+          "id_tag": "pavp_pho",
+          "name": "photography"
+        },
+        {
+          "id_tag": "pavp_vidpro",
+          "name": "video production"
+        },
+        {
+          "id_tag": "pavp_camtec",
+          "name": "camera techniques"
+        }
+      ],
+      "children": [
+        {
+          "id": 139,
+          "name": "DSLR Photography",
+          "tags": [
+            {
+              "id_tag": "pavp_dslcam",
+              "name": "DSLR cameras"
+            },
+            {
+              "id_tag": "pavp_manset",
+              "name": "manual settings"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 140,
+          "name": "Smartphone Photography",
+          "tags": [
+            {
+              "id_tag": "pavp_phocam",
+              "name": "phone cameras"
+            },
+            {
+              "id_tag": "pavp_mobpho",
+              "name": "mobile photography"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 141,
+          "name": "Video Editing (Premiere Pro, Final Cut Pro)",
+          "tags": [
+            {
+              "id_tag": "pavp_videdisof",
+              "name": "video editing software"
+            },
+            {
+              "id_tag": "pavp_prepro",
+              "name": "Premiere Pro"
+            },
+            {
+              "id_tag": "pavp_fincutpro",
+              "name": "Final Cut Pro"
+            }
+          ],
+          "children": []
+        }
+      ]
+    }
+  ]
+}
