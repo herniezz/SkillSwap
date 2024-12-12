@@ -11,11 +11,29 @@ const { getSignedUrl } = require('@aws-sdk/s3-request-presigner');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Retrieve allowed origins from environment variables
+const allowedOrigins = process.env.ALLOWED_ORIGINS
+    ? process.env.ALLOWED_ORIGINS.split(',')
+    : ['https://herniezz.github.io']; // Default to production origin if not set
+
 // Enable CORS with specific configuration
 app.use(cors({
-    origin: 'https://herniezz.github.io', // Your GitHub Pages domain
+    origin: function(origin, callback){
+        // Allow requests with no origin (like mobile apps or curl requests)
+        if (!origin) return callback(null, true);
+
+        if (allowedOrigins.includes(origin)){
+            // Origin is allowed
+            callback(null, true);
+        }
+        else{
+            // Origin is not allowed
+            callback(new Error('CORS policy does not allow access from the specified Origin.'), false);
+        }
+    },
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'x-amz-acl'],
+    credentials: true, // If you need to send cookies or authentication headers
 }));
 
 // Parse JSON body for POST requests
