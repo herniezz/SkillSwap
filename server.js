@@ -1,22 +1,33 @@
+// server.js
+
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
-const AWS = require('aws-sdk'); // Import AWS SDK
+
+// Import AWS SDK v3 modules
+const { S3Client, PutObjectCommand } = require('@aws-sdk/client-s3');
+const { getSignedUrl } = require('@aws-sdk/s3-request-presigner');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Enable CORS
-app.use(cors());
+// Enable CORS with specific configuration
+app.use(cors({
+    origin: 'https://herniezz.github.io', // Your GitHub Pages domain
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'x-amz-acl'],
+}));
 
 // Parse JSON body for POST requests
 app.use(express.json());
 
-// Configure AWS SDK
-const s3 = new AWS.S3({
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-    region: process.env.AWS_REGION
+// Configure AWS SDK v3 S3 Client
+const s3Client = new S3Client({
+    region: process.env.AWS_REGION,
+    credentials: {
+        accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+        secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+    },
 });
 
 // Default route
@@ -36,7 +47,7 @@ app.get('/api/clerk-key', (req, res) => {
     res.status(200).json({ publishableKey: clerkKey });
 });
 
-// Route for generating S3 signed URLs
+// Route for generating S3 signed URLs using AWS SDK v3
 app.post('/api/images/sign', async (req, res) => {
     console.log('Incoming request body:', req.body);
 
@@ -45,27 +56,32 @@ app.post('/api/images/sign', async (req, res) => {
         return res.status(400).json({ error: 'fileName or fileType is missing' });
     }
 
+    // Optional: Generate a unique filename to prevent collisions
+    const uniqueFileName = `${Date.now()}-${fileName}`;
+
     const params = {
         Bucket: process.env.S3_BUCKET,
-        Key: fileName,
-        Expires: 60,
+        Key: uniqueFileName,
         ContentType: fileType,
-        ACL: 'public-read',
+        ACL: 'public-read', // Must match the header in the PUT request
     };
 
     try {
-        const signedUrl = await s3.getSignedUrlPromise('putObject', params);
+        const command = new PutObjectCommand(params);
+        const signedUrl = await getSignedUrl(s3Client, command, { expiresIn: 60 }); // URL valid for 60 seconds
+
+        const fileUrl = `https://${process.env.S3_BUCKET}.s3.${process.env.AWS_REGION}.amazonaws.com/${uniqueFileName}`;
+
         console.log('Signed URL generated:', signedUrl);
         res.json({
             signedUrl,
-            url: `https://${process.env.S3_BUCKET}.s3.${process.env.AWS_REGION}.amazonaws.com/${fileName}`,
+            url: fileUrl,
         });
     } catch (error) {
         console.error('Error generating signed URL:', error);
         res.status(500).json({ error: 'Could not generate signed URL' });
     }
 });
-
 
 // Start the server
 app.listen(PORT, () => {
