@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-sdk/s3-request-presigner": "^3.709.0",
     "@clerk/nextjs": "^6.7.1",
     "@mantine/core": "^6.0.21",
     "@mantine/hooks": "^6.0.21",
