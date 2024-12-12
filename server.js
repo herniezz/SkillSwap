@@ -11,18 +11,22 @@ const { getSignedUrl } = require('@aws-sdk/s3-request-presigner');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Retrieve allowed origins from environment variables
-const allowedOrigins = process.env.ALLOWED_ORIGINS
-    ? process.env.ALLOWED_ORIGINS.split(',')
-    : ['https://herniezz.github.io']; // Default to production origin if not set
+// Define allowed origins
+const allowedOrigins = [
+    'https://herniezz.github.io',    // Production frontend
+    'http://localhost:3000',        // Development frontend
+    'http://127.0.0.1:3000',        // Additional development origin
+    // Add other origins as needed
+];
 
 // Enable CORS with specific configuration
 app.use(cors({
     origin: function(origin, callback){
+        console.log('Incoming request origin:', origin); // Log the origin
         // Allow requests with no origin (like mobile apps or curl requests)
         if (!origin) return callback(null, true);
 
-        if (allowedOrigins.includes(origin)){
+        if (allowedOrigins.indexOf(origin) !== -1){
             // Origin is allowed
             callback(null, true);
         }
