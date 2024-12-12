@@ -38,6 +38,11 @@ export default function Page() {
                     Tu są proponowane profile
                 </Link>
             </h2>
+            <h2>
+                <Link href="/ImageUploader">
+                   Tu jest do testowania uploadu zdjęć
+                </Link>
+            </h2>
         </>
     );
 }
