@@ -38,27 +38,34 @@ app.get('/api/clerk-key', (req, res) => {
 
 // Route for generating S3 signed URLs
 app.post('/api/images/sign', async (req, res) => {
+    console.log('Incoming request body:', req.body);
+
     const { fileName, fileType } = req.body;
+    if (!fileName || !fileType) {
+        return res.status(400).json({ error: 'fileName or fileType is missing' });
+    }
 
     const params = {
         Bucket: process.env.S3_BUCKET,
         Key: fileName,
-        Expires: 60, // URL valid for 1 minute
+        Expires: 60,
         ContentType: fileType,
-        ACL: 'public-read' // Allow public read access
+        ACL: 'public-read',
     };
 
     try {
         const signedUrl = await s3.getSignedUrlPromise('putObject', params);
+        console.log('Signed URL generated:', signedUrl);
         res.json({
             signedUrl,
-            url: `https://${process.env.S3_BUCKET}.s3.${process.env.AWS_REGION}.amazonaws.com/${fileName}`
+            url: `https://${process.env.S3_BUCKET}.s3.${process.env.AWS_REGION}.amazonaws.com/${fileName}`,
         });
     } catch (error) {
         console.error('Error generating signed URL:', error);
         res.status(500).json({ error: 'Could not generate signed URL' });
     }
 });
+
 
 // Start the server
 app.listen(PORT, () => {
