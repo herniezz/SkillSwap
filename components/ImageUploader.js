@@ -25,59 +25,59 @@ const ImageUploader = () => {
         setMessage(''); // Clear any previous messages
     };
 
-    const handleUpload = () => {
+    const handleUpload = async () => {
+        if (isUploading) return; // Prevent double submissions
         if (!file) {
             setMessage('Please select a file to upload.');
             return;
         }
 
         setIsUploading(true);
-
         const fileName = file.name;
         const fileType = file.type;
 
-        // Step 1: Get the signed URL from the backend
-        fetch('https://fast-peak-76057-7dc46f68d3e1.herokuapp.com/api/images/sign', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ fileName, fileType }),
-        })
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error('Failed to get signed URL');
-                }
-                return response.json();
-            })
-            .then(({ signedUrl, url }) => {
-                console.log('Signed URL:', signedUrl);
+        try {
+            console.log('Starting upload...');
+            console.log('File details:', { fileName, fileType });
 
-                // Step 2: Upload the file to S3 using the signed URL
-                return fetch(signedUrl, {
-                    method: 'PUT',
-                    headers: {
-                        'Content-Type': fileType,
-                        'x-amz-acl': 'public-read',
-                    },
-                    body: file,
-                }).then((uploadResponse) => {
-                    if (!uploadResponse.ok) {
-                        throw new Error('Failed to upload to S3');
-                    }
-                    setUploadedUrl(url); // The public URL of the uploaded file
-                    setMessage('File uploaded successfully!');
-                });
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-                if (error.message.includes('Failed to get signed URL')) {
-                    setMessage('Could not contact the server to generate a signed URL.');
-                } else if (error.message.includes('Failed to upload')) {
-                    setMessage('File upload to S3 failed.');
-                } else {
-                    setMessage('An unexpected error occurred.');
-                }
-            })
-            .finally(() => setIsUploading(false));
+            // Step 1: Get the signed URL from the backend
+            const signResponse = await fetch('https://fast-peak-76057-7dc46f68d3e1.herokuapp.com/api/images/sign', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ fileName, fileType }),
+            });
+
+            if (!signResponse.ok) {
+                const errorText = await signResponse.text();
+                throw new Error(`Failed to get signed URL. Status: ${signResponse.status}. Response: ${errorText}`);
+            }
+
+            const { signedUrl, url } = await signResponse.json();
+            console.log('Signed URL received:', signedUrl);
+
+            // Step 2: Upload the file to S3 using the signed URL
+            const uploadResponse = await fetch(signedUrl, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': fileType,
+                },
+                body: file,
+            });
+
+            if (!uploadResponse.ok) {
+                const errorText = await uploadResponse.text();
+                throw new Error(`Failed to upload to S3. Status: ${uploadResponse.status}. Response: ${errorText}`);
+            }
+
+            setUploadedUrl(url); // The public URL of the uploaded file
+            setMessage('File uploaded successfully!');
+            setFile(null); // Reset file input
+        } catch (error) {
+            console.error('Error during upload process:', error);
+            setMessage(`An error occurred: ${error.message}`);
+        } finally {
+            setIsUploading(false);
+        }
     };
 
     return (
