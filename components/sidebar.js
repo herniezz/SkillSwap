@@ -28,8 +28,8 @@ export default function Sidebar() {
 
   const loggedOutLinks = [
     { label: 'Strona główna', icon: IconHome, link: '/' },
-    { label: 'Zaloguj się', icon: IconLogin, link: '/sign-in' },
-    { label: 'Zarejestruj się', icon: IconUserPlus, link: '/sign-up' },
+    { label: 'Zaloguj się', icon: IconLogin, link: '/signin' },
+    { label: 'Zarejestruj się', icon: IconUserPlus, link: '/signup' },
   ];
 
   return (
