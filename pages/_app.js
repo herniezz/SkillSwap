@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { MantineProvider } from '@mantine/core';
 import { ClerkProvider } from '@clerk/nextjs';
 import '@/styles/globals.css';
+import Sidebar from '../components/Sidebar'; // Import Sidebar
 
 export default function MyApp({ Component, pageProps }) {
     const [publishableKey, setPublishableKey] = useState(null);
@@ -91,7 +92,14 @@ export default function MyApp({ Component, pageProps }) {
                 withGlobalStyles
                 withNormalizeCSS
             >
-                <Component {...pageProps} />
+                <div style={{ display: 'flex' }}>
+                    {/* Sidebar zawsze obecny */}
+                    <Sidebar />
+                    {/* Główna zawartość strony */}
+                    <div style={{ flex: 1, padding: '20px' }}>
+                        <Component {...pageProps} />
+                    </div>
+                </div>
             </MantineProvider>
         </ClerkProvider>
     );
