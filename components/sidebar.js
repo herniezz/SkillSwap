@@ -19,7 +19,7 @@ export default function Sidebar() {
   const loggedInLinks = [
     { label: 'Ulubione', icon: IconStar, link: '/favorites' },
     { label: 'Znajomi', icon: IconUsers, link: '/friends' },
-    { label: 'Strona główna', icon: IconHome, link: '/git s' },
+    { label: 'Strona główna', icon: IconHome, link: 'https://herniezz.github.io/SkillSwap/' },
     { label: 'Profil', icon: IconUser, link: '/profile' },
     { label: 'Wiadomości', icon: IconMessage, link: '/messages' },
     { label: 'Ustawienia', icon: IconSettings, link: '/settings' },
@@ -27,7 +27,7 @@ export default function Sidebar() {
   ];
 
   const loggedOutLinks = [
-    { label: 'Strona główna', icon: IconHome, link: '/' },
+    { label: 'Strona główna', icon: IconHome, link: 'https://herniezz.github.io/SkillSwap/' },
     { label: 'Zaloguj się', icon: IconLogin, link: '/signin' },
     { label: 'Zarejestruj się', icon: IconUserPlus, link: '/signup' },
   ];
