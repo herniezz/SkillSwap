@@ -7,21 +7,21 @@ const profiles = [
         id: 'ania', // Unique identifier for the profiles
         name: 'Ania Kowalska',
         age: 28,
-        avatar: '/assets/ania.png',
+        avatar: 'https://skillswapp.s3.eu-north-1.amazonaws.com/1736440390610-ania.png',
         skills: ['programowanie HTML', 'tenis', 'szydełkowanie'],
     },
     {
         id: 'bob',
         name: 'Bob Kowalski',
         age: 19,
-        avatar: '/assets/bob.png',
+        avatar: 'https://skillswapp.s3.eu-north-1.amazonaws.com/1736448315007-bob.png',
         skills: ['programowanie HTML', 'kreatywne pisanie'],
     },
     {
         id: 'kamala',
         name: 'Kamala Wiśniewska',
         age: 34,
-        avatar: '/assets/Kamala.png',
+        avatar: 'https://skillswapp.s3.eu-north-1.amazonaws.com/1736438925120-Kamala.png',
         skills: ['programowanie HTML'],
     },
 ];
