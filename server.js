@@ -4,6 +4,7 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
 
+
 // Import AWS SDK v3 modules
 const { S3Client, PutObjectCommand } = require('@aws-sdk/client-s3');
 const { getSignedUrl } = require('@aws-sdk/s3-request-presigner');
@@ -11,11 +12,33 @@ const { getSignedUrl } = require('@aws-sdk/s3-request-presigner');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Define allowed origins
+const allowedOrigins = [
+    'https://herniezz.github.io',    // Production frontend
+    'http://localhost:3000',        // Development frontend
+    'http://127.0.0.1:3000',        // Additional development origin
+
+];
+
 // Enable CORS with specific configuration
 app.use(cors({
-    origin: 'https://herniezz.github.io', // Your GitHub Pages domain
+    origin: function(origin, callback){
+        console.log('Incoming request origin:', origin); // Log the origin
+        // Allow requests with no origin (like mobile apps or curl requests)
+        if (!origin) return callback(null, true);
+
+        if (allowedOrigins.indexOf(origin) !== -1){
+            // Origin is allowed
+            callback(null, true);
+        }
+        else{
+            // Origin is not allowed
+            callback(new Error('CORS policy does not allow access from the specified Origin.'), false);
+        }
+    },
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'x-amz-acl'],
+    credentials: true, // If you need to send cookies or authentication headers
 }));
 
 // Parse JSON body for POST requests
@@ -63,8 +86,11 @@ app.post('/api/images/sign', async (req, res) => {
         Bucket: process.env.S3_BUCKET,
         Key: uniqueFileName,
         ContentType: fileType,
-        ACL: 'public-read', // Must match the header in the PUT request
+        ACL: 'public-read', // Ensure this matches the headers sent by the frontend
     };
+    const command = new PutObjectCommand(params);
+    const signedUrl = await getSignedUrl(s3Client, command, { expiresIn: 60 });
+
 
     try {
         const command = new PutObjectCommand(params);
