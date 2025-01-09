@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { MantineProvider } from '@mantine/core';
 import { ClerkProvider } from '@clerk/nextjs';
 import '@/styles/globals.css';
-import Sidebar from '../components/Sidebar'; // Import Sidebar
+import Sidebar from '../components/sidebar'; // Import Sidebar
 
 export default function MyApp({ Component, pageProps }) {
     const [publishableKey, setPublishableKey] = useState(null);
