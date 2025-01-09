@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../styles/pages/quiz.module.css';
 import { IconArrowLeft } from '@tabler/icons-react'; // Import arrow icon
+import icons from '../components/icons'; // Import icons
 
 const Quiz = ({ quizData, onComplete }) => {
     const [currentStep, setCurrentStep] = useState(0);
@@ -60,6 +61,13 @@ const Quiz = ({ quizData, onComplete }) => {
                                 }`}
                                 onClick={() => handleOptionSelect(option)}
                             >
+                                {icons[option] && (
+                                    <img
+                                        src={icons[option]}
+                                        alt={`${option} Icon`}
+                                        style={{ width: 20, height: 20, marginRight: '10px' }}
+                                    />
+                                )}
                                 {option}
                             </button>
                         ))}
