@@ -63,63 +63,63 @@ const Quiz = ({ quizData, onComplete }) => {
             >
               {option === "Sports activity" && (
                 <img
-                  src="/assets/icons/sport.png"  // Ścieżka do pliku PNG w folderze public
+                  src="https://skillswapp.s3.eu-north-1.amazonaws.com/1736438212454-sport.png" 
                   alt="Sport Icon"
                   style={{ width: 20, height: 20, marginRight: '10px' }} 
                 />
               )}
               {option === "Technical news" && (
                 <img
-                  src="/assets/icons/Tech.png"  // Ścieżka do pliku PNG w folderze public
+                  src="https://skillswapp.s3.eu-north-1.amazonaws.com/1736438292590-tech.png" 
                   alt="Tech Icon"
                   style={{ width: 20, height: 20, marginRight: '10px' }} 
                 />
               )}
               {option === "Admiring art" && (
                 <img
-                  src="/assets/icons/art.png"  // Ścieżka do pliku PNG w folderze public
+                  src="https://skillswapp.s3.eu-north-1.amazonaws.com/1736438009062-art.png" 
                   alt="Art Icon"
                   style={{ width: 20, height: 20, marginRight: '10px' }}
                 />
               )}
                {option === "Fashion, latest trends" && (
                 <img
-                  src="/assets/icons/style.png"  // Ścieżka do pliku PNG w folderze public
+                  src="https://skillswapp.s3.eu-north-1.amazonaws.com/1736438254146-style.png" 
                   alt="Style Icon"
                   style={{ width: 20, height: 20, marginRight: '10px' }}
                 />
               )}
               {option === "Travel, interesting places" && (
                 <img
-                  src="/assets/icons/travel.png"  // Ścieżka do pliku PNG w folderze public
+                  src="https://skillswapp.s3.eu-north-1.amazonaws.com/1736438350596-travel.png"
                   alt="Travel Icon"
                   style={{ width: 20, height: 20, marginRight: '10px' }}
                 />
               )}
               {option === "Meeting new people" && (
                 <img
-                  src="/assets/icons/meet.png"  // Ścieżka do pliku PNG w folderze public
+                  src="https://skillswapp.s3.eu-north-1.amazonaws.com/1736438183199-meet.png"
                   alt="Meet Icon"
                   style={{ width: 20, height: 20, marginRight: '10px' }}
                 />
               )}
               {option === "Mind-calming activities" && (
                 <img
-                  src="/assets/icons/calm.png"  // Ścieżka do pliku PNG w folderze public
+                  src="https://skillswapp.s3.eu-north-1.amazonaws.com/1736438135676-calm.png" 
                   alt="Calm Icon"
                   style={{ width: 20, height: 20, marginRight: '10px' }}
                 />
               )}
               {option === "Technology-related topics" && (
                 <img
-                  src="/assets/icons/tech1.png"  // Ścieżka do pliku PNG w folderze public
+                  src="https://skillswapp.s3.eu-north-1.amazonaws.com/1736438320775-tech1.png"
                   alt="Tech1 Icon"
                   style={{ width: 20, height: 20, marginRight: '10px' }}
                 />
               )}
                 {option === "Staying at home with a book" && (
                     <img
-                      src="/assets/icons/book.png"  // Ścieżka do pliku PNG w folderze public
+                      src="https://skillswapp.s3.eu-north-1.amazonaws.com/1736438081295-book.png"
                       alt="Book Icon"
                       style={{ width: 20, height: 20, marginRight: '10px' }} 
                     />
