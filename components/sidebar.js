@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import { Navbar, NavLink, Burger } from '@mantine/core';
-import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs';
+import { useState } from "react";
+import { Navbar, NavLink, Burger } from "@mantine/core";
+import { SignedIn, SignedOut, SignInButton, UserButton, useClerk } from "@clerk/nextjs";
 import {
   IconStar,
   IconUsers,
@@ -11,55 +11,58 @@ import {
   IconHelp,
   IconLogin,
   IconUserPlus,
-} from '@tabler/icons-react';
+} from "@tabler/icons-react";
 
 export default function Sidebar() {
   const [opened, setOpened] = useState(true); // Kontroluje widoczność Sidebaru
+  const { openUserProfile } = useClerk(); // Funkcja otwierająca panel zarządzania kontem
 
   const loggedInLinks = [
-    { label: 'Ulubione', icon: IconStar, link: '/favorites' },
-    { label: 'Znajomi', icon: IconUsers, link: '/friends' },
-    { label: 'Strona główna', icon: IconHome, link: '/' },
-    { label: 'Profil', icon: IconUser, link: '/profile' },
-    { label: 'Wiadomości', icon: IconMessage, link: '/messages' },
-    { label: 'Ustawienia', icon: IconSettings, link: '/settings' },
-    { label: 'Support', icon: IconHelp, link: '/support' },
+    { label: "Ulubione", icon: IconStar, link: "/favorites" },
+    { label: "Znajomi", icon: IconUsers, link: "/ProposedProfiles" },
+    { label: "Strona główna", icon: IconHome, link: "/mainpage" },
+    { label: "Profil", icon: IconUser, link: "/profiles/userChoices" },
+    { label: "Wiadomości", icon: IconMessage, link: "/messages" },
+    { label: "Ustawienia", icon: IconSettings, action: openUserProfile }, // Dodano akcję otwierającą panel
+    { label: "Support", icon: IconHelp, link: "/support" },
   ];
 
   const loggedOutLinks = [
-    { label: 'Strona główna', icon: IconHome, link: '/' },
-    { label: 'Zaloguj się', icon: IconLogin, link: '/signin' },
-    { label: 'Zarejestruj się', icon: IconUserPlus, link: '/signup' },
+    { label: "Strona główna", icon: IconHome, link: "/" },
+    { label: "Zaloguj się", icon: IconLogin, link: "/signin" },
+    { label: "Zarejestruj się", icon: IconUserPlus, link: "/signup" },
   ];
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
+    <div style={{ display: "flex", flexDirection: "column" }}>
       {/* Ikona hamburgera */}
       <Burger
         opened={opened}
         onClick={() => setOpened((o) => !o)}
-        title={opened ? 'Close sidebar' : 'Open sidebar'}
-        style={{ marginBottom: '1rem' }}
+        title={opened ? "Close sidebar" : "Open sidebar"}
+        style={{ marginBottom: "1rem" }}
       />
+
       {/* Sidebar dla zalogowanych użytkowników */}
       <SignedIn>
         {opened && (
           <Navbar width={{ base: 300 }} p="md">
             <center>
-      <SignedOut>
-        <SignInButton />
-      </SignedOut>
-      <SignedIn>
-        <UserButton/>
-      </SignedIn>
-      </center>
+              <SignedOut>
+                <SignInButton />
+              </SignedOut>
+              <SignedIn>
+                <UserButton />
+              </SignedIn>
+            </center>
             {loggedInLinks.map((item) => (
               <NavLink
                 key={item.label}
                 label={item.label}
                 icon={<item.icon size={20} />}
-                component="a"
-                href={item.link}
+                component={item.link ? "a" : "button"} // Jeśli jest `link`, renderujemy jako <a>; inaczej jako <button>
+                href={item.link || undefined}
+                onClick={item.action || undefined} // Dodano obsługę akcji dla "Ustawienia"
                 variant="filled"
                 my="sm"
               />
