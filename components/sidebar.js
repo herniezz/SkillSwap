@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Navbar, NavLink, Burger } from '@mantine/core';
-import { SignedIn, SignedOut } from '@clerk/nextjs';
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs';
 import {
   IconStar,
   IconUsers,
@@ -41,11 +41,18 @@ export default function Sidebar() {
         title={opened ? 'Close sidebar' : 'Open sidebar'}
         style={{ marginBottom: '1rem' }}
       />
-
       {/* Sidebar dla zalogowanych użytkowników */}
       <SignedIn>
         {opened && (
           <Navbar width={{ base: 300 }} p="md">
+            <center>
+      <SignedOut>
+        <SignInButton />
+      </SignedOut>
+      <SignedIn>
+        <UserButton/>
+      </SignedIn>
+      </center>
             {loggedInLinks.map((item) => (
               <NavLink
                 key={item.label}
