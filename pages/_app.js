@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { MantineProvider } from '@mantine/core';
-import { ClerkProvidern } from '@clerk/nextjs';
+import { ClerkProvider } from '@clerk/nextjs';
 import '@/styles/globals.css';
 import Sidebar from '../components/sidebar'; // Import Sidebar
 
