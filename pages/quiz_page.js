@@ -15,14 +15,17 @@ const QuizPage = () => {
         setResults(recommendedSkills);
     };
 
+
     const handleSkillClick = (skill) => {
         router.push('/ProposedProfiles');
     };
+
 
     return (
         <div className={styles.backgroundGradient}>
             <div className={styles.container}>
                 {results ? (
+                    
                     <div>
                         <h1 className={styles.endcardTitle}>Your new skills</h1>
                         <h2 className={styles.endcardSubtitle}>
@@ -48,6 +51,7 @@ const QuizPage = () => {
                 )}
             </div>
         </div>
+        
     );
 };
 
