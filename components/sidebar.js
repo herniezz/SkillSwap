@@ -15,7 +15,7 @@ import {
 
 export default function Sidebar() {
   const [opened, setOpened] = useState(true); // Kontroluje widoczność Sidebaru
-  const { openUserProfile } = useClerk(); // Funkcja otwierająca panel zarządzania kontem
+  const { openUserProfile } = useClerk();    // Funkcja otwierająca panel zarządzania kontem
 
   const loggedInLinks = [
     { label: "Ulubione", icon: IconStar, link: "/favorites" },
@@ -23,7 +23,7 @@ export default function Sidebar() {
     { label: "Strona główna", icon: IconHome, link: "/mainpage" },
     { label: "Profil", icon: IconUser, link: "/profiles/userChoices" },
     { label: "Wiadomości", icon: IconMessage, link: "/messages" },
-    { label: "Ustawienia", icon: IconSettings, action: openUserProfile }, // Dodano akcję otwierającą panel
+    { label: "Ustawienia", icon: IconSettings, action: openUserProfile }, // otwiera panel zarządzania
     { label: "Support", icon: IconHelp, link: "/support" },
   ];
 
@@ -60,9 +60,9 @@ export default function Sidebar() {
                 key={item.label}
                 label={item.label}
                 icon={<item.icon size={20} />}
-                component={item.link ? "a" : "button"} // Jeśli jest `link`, renderujemy jako <a>; inaczej jako <button>
+                component={item.link ? "a" : "button"} // jeśli jest link, renderujemy jako <a>
                 href={item.link || undefined}
-                onClick={item.action || undefined} // Dodano obsługę akcji dla "Ustawienia"
+                onClick={item.action || undefined}
                 variant="filled"
                 my="sm"
               />
