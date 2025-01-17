@@ -103,6 +103,30 @@ app.post('/api/images/sign', clerkMiddleware(), async (req, res) => {
     }
 });
 
+// Route to register or update a user after Clerk authentication
+app.post('/api/users/register', clerkMiddleware(), async (req, res) => {
+    const { userId, firstName, lastName, emailAddresses, profileImageUrl } = req.auth || {};
+    const name = `${firstName || ''} ${lastName || ''}`.trim();
+    const email = emailAddresses && emailAddresses.length > 0 ? emailAddresses[0].emailAddress : null;
+
+    if (!userId || !email) {
+        return res.status(400).json({ error: 'Missing user information' });
+    }
+
+    const query = `
+    INSERT INTO users (name, email, avatar, clerk_user_id)
+    VALUES ($1, $2, $3, $4)
+    ON CONFLICT (clerk_user_id) DO NOTHING;
+  `;
+    try {
+        await pool.query(query, [name, email, profileImageUrl, userId]);
+        res.status(200).json({ message: 'User registered or already exists' });
+    } catch (err) {
+        console.error('Database error:', err);
+        res.status(500).json({ error: 'Failed to register user' });
+    }
+});
+
 // Secure route example
 app.get('/api/secure', clerkMiddleware(), (req, res) => {
     res.json({ message: 'This is a secure route.', userId: req.auth.userId });
