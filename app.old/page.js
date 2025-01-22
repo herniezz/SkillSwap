@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from 'react';
 import { TextInput, Card, Title as MantineTitle, Badge, Group, Button, Stack, Container, Avatar, Text } from '@mantine/core';
 import { IconHeart } from '@tabler/icons-react';

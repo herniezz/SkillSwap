@@ -7,7 +7,7 @@ import {
     TextInput,
     Group,
 } from '@mantine/core';
-import { IconHeart } from '@tabler/icons-react';
+import { IconHeart, IconHeartFilled } from '@tabler/icons-react';
 
 import pageStructure from '../../data/page_structure.json';
 import { flattenPageStructure } from '../../utils/flattenPageStructure';
@@ -17,6 +17,19 @@ import styles from '../../styles/pages/search.module.css';
 export default function SearchPage() {
     const { isSignedIn } = useUser();
     const [search, setSearch] = useState('');
+    const [favorites, setFavorites] = useState([]);
+    const [popup, setPopup] = useState('');
+
+    const handleFavoriteClick = (tag) => {
+        if (favorites.includes(tag)) {
+            setFavorites((prev) => prev.filter((fav) => fav !== tag));
+            setPopup(`Usunięto "${tag}" z ulubionych!`);
+        } else {
+            setFavorites((prev) => [...prev, tag]);
+            setPopup(`Dodano "${tag}" do ulubionych!`);
+        }
+        setTimeout(() => setPopup(''), 2000);
+    };
 
     // 1) Flatten JSON
     const allItems = flattenPageStructure(pageStructure);
@@ -59,12 +72,10 @@ export default function SearchPage() {
                     withBorder
                     style={{ marginBottom: 20 }}
                 >
-                    {/* Category button using CSS class */}
                     <button className={styles.categoryButton}>
                         {item.name}
                     </button>
 
-                    {/* Tag pills with hearts to the right */}
                     <Group spacing="xs" style={{ flexWrap: 'wrap', gap: 8 }}>
                         {item.tags.map((tag, idx) => (
                             <div
@@ -75,7 +86,6 @@ export default function SearchPage() {
                                     gap: '6px',
                                 }}
                             >
-                                {/* Button styled with hover effects using skillButton class */}
                                 <Button
                                     variant="light"
                                     radius="xl"
@@ -85,21 +95,28 @@ export default function SearchPage() {
                                     {tag}
                                 </Button>
 
-                                {/* Heart icon with hover effect */}
-                                <IconHeart
-                                    size={18}
-                                    className={styles.heartIcon}
-                                    onClick={() => {
-                                        console.log('Favorited tag:', tag);
-                                    }}
-                                />
+                                {favorites.includes(tag) ? (
+                                    <IconHeartFilled
+                                        size={18}
+                                        className={styles.heartIcon}
+                                        color="red"
+                                        onClick={() => handleFavoriteClick(tag)}
+                                        style={{ cursor: 'pointer' }}
+                                    />
+                                ) : (
+                                    <IconHeart
+                                        size={18}
+                                        className={styles.heartIcon}
+                                        onClick={() => handleFavoriteClick(tag)}
+                                        style={{ cursor: 'pointer' }}
+                                    />
+                                )}
                             </div>
                         ))}
                     </Group>
                 </Card>
             ))}
 
-            {/* Sign in notice if not logged in */}
             {!isSignedIn && (
                 <Button
                     variant="outline"
@@ -108,6 +125,12 @@ export default function SearchPage() {
                 >
                     Please sign in to save your favorite tags
                 </Button>
+            )}
+
+            {popup && (
+                <div className={styles.toast}>
+                    <div className={styles.toastContent}>{popup}</div>
+                </div>
             )}
         </Container>
     );

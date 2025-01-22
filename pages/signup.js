@@ -1,6 +1,6 @@
 // pages/quiz_page.js
 import { useEffect } from 'react';
-import { useUser } from '@clerk/nextjs';
+import { SignUp, useUser } from '@clerk/nextjs';
 
 export default function QuizPage() {
     const { isLoaded, user } = useUser();
