@@ -1,9 +1,9 @@
-const { Pool } = require('pg');
+// utils/db.js
+import { Pool } from 'pg';
 
-// Create a new pool instance with your database credentials or connection string.
 const pool = new Pool({
-    connectionString: process.env.DATABASE_URL, // typically provided by Heroku
-    ssl: {
-        rejectUnauthorized: false, // required for Heroku SSL connections
-    },
+    connectionString: process.env.DATABASE_URL,
+    ssl: { rejectUnauthorized: false },
 });
+
+export default pool;

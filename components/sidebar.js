@@ -19,19 +19,19 @@ export default function Sidebar() {
   const { isLoaded, user } = useUser();
 
   const loggedInLinks = [
-    { label: "Strona główna", icon: IconHome, link: "/" },
-    { label: "Znajomi", icon: IconUsers, link: "/ProposedProfiles" },
-    { label: "Ulubione", icon: IconStar, link: "/favorites" },
-    { label: "Profil", icon: IconUser, link: "/profiles/userChoices" },
-    { label: "Wiadomości", icon: IconMessage, link: "/messages" },
+    { label: "Strona główna", icon: IconHome, link: "https://herniezz.github.io/SkillSwap/" },
+    { label: "Znajomi", icon: IconUsers, link: "https://herniezz.github.io/SkillSwap/ProposedProfiles" },
+    { label: "Ulubione", icon: IconStar, link: "https://herniezz.github.io/SkillSwap/favorites" },
+    { label: "Profil", icon: IconUser, link: "https://herniezz.github.io/SkillSwap/profiles/userChoices" },
+    { label: "Wiadomości", icon: IconMessage, link: "https://herniezz.github.io/SkillSwap/messages" },
     { label: "Ustawienia", icon: IconSettings, action: openUserProfile }, // otwiera panel zarządzania
-    { label: "Support", icon: IconHelp, link: "/support" },
+    { label: "Support", icon: IconHelp, link: "https://herniezz.github.io/SkillSwap/support" },
   ];
 
   const loggedOutLinks = [
-    { label: "Strona główna", icon: IconHome, link: "/" },
-    { label: "Zaloguj się", icon: IconLogin, link: "/signin" },
-    { label: "Zarejestruj się", icon: IconUserPlus, link: "/signup" },
+    { label: "Strona główna", icon: IconHome, link: "https://herniezz.github.io/SkillSwap/" },
+    { label: "Zaloguj się", icon: IconLogin, link: "https://herniezz.github.io/SkillSwap/signin" },
+    { label: "Zarejestruj się", icon: IconUserPlus, link: "https://herniezz.github.io/SkillSwap/signup" },
   ];
 
   return (

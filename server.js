@@ -1,19 +1,20 @@
+// server.js
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-require('dotenv').config();
-const pool = require('./utils/db'); // Import the PostgreSQL pool from utils/db.js
+const pool = require('./utils/db'); // PostgreSQL pool
 const { S3Client, PutObjectCommand } = require('@aws-sdk/client-s3');
 const { getSignedUrl } = require('@aws-sdk/s3-request-presigner');
-const { clerkMiddleware } = require("@clerk/nextjs/server");
+const { clerkMiddleware } = require('@clerk/nextjs/server');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Allowed origins for CORS
 const allowedOrigins = [
-    'https://herniezz.github.io',    // Production frontend
-    'http://localhost:3000',         // Development frontend
-    'http://127.0.0.1:3000',         // Additional development origin
+    'https://herniezz.github.io', // Production frontend
+    'http://localhost:3000',      // Dev frontend
+    'http://127.0.0.1:3000',      // Additional dev origin
 ];
 
 // Enable CORS with specific configuration
@@ -25,7 +26,7 @@ app.use(cors({
         if (allowedOrigins.includes(origin)) {
             callback(null, true);
         } else {
-            callback(new Error('CORS policy does not allow access from the specified Origin.'), false);
+            callback(new Error('CORS policy does not allow access from the specified origin.'), false);
         }
     },
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'OPTIONS'],
@@ -48,6 +49,19 @@ const s3Client = new S3Client({
 // Default route
 app.get('/', (req, res) => {
     res.send('SkillSwap Backend is running successfully!');
+});
+
+// ─────────────────────────────────────────────────────────────────────────
+// DB TEST ROUTE
+// ─────────────────────────────────────────────────────────────────────────
+app.get('/api/test-db', async (req, res) => {
+    try {
+        const result = await pool.query('SELECT NOW() as current_time');
+        res.json({ time: result.rows[0].current_time });
+    } catch (error) {
+        console.error('Database error:', error);
+        res.status(500).json({ error: 'Database error' });
+    }
 });
 
 // Route to get Clerk publishable key
