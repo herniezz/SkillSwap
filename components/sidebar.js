@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Navbar, NavLink, Burger } from "@mantine/core";
-import { SignedIn, SignedOut, SignInButton, UserButton, useClerk } from "@clerk/nextjs";
+import { SignedIn, SignedOut, SignInButton, UserButton, useClerk, useUser } from "@clerk/nextjs";
 import {
   IconStar,
   IconUsers,
@@ -16,11 +16,12 @@ import {
 export default function Sidebar() {
   const [opened, setOpened] = useState(true); // Kontroluje widoczność Sidebaru
   const { openUserProfile } = useClerk();    // Funkcja otwierająca panel zarządzania kontem
+  const { isLoaded, user } = useUser();
 
   const loggedInLinks = [
-    { label: "Ulubione", icon: IconStar, link: "/favorites" },
+    { label: "Strona główna", icon: IconHome, link: "/" },
     { label: "Znajomi", icon: IconUsers, link: "/ProposedProfiles" },
-    { label: "Strona główna", icon: IconHome, link: "/mainpage" },
+    { label: "Ulubione", icon: IconStar, link: "/favorites" },
     { label: "Profil", icon: IconUser, link: "/profiles/userChoices" },
     { label: "Wiadomości", icon: IconMessage, link: "/messages" },
     { label: "Ustawienia", icon: IconSettings, action: openUserProfile }, // otwiera panel zarządzania
@@ -40,7 +41,7 @@ export default function Sidebar() {
         opened={opened}
         onClick={() => setOpened((o) => !o)}
         title={opened ? "Close sidebar" : "Open sidebar"}
-        style={{ marginBottom: "1rem" }}
+        style={{ marginBottom: "1rem", margin: "10px"}}
       />
 
       {/* Sidebar dla zalogowanych użytkowników */}
@@ -52,7 +53,22 @@ export default function Sidebar() {
                 <SignInButton />
               </SignedOut>
               <SignedIn>
-                <UserButton />
+              <UserButton
+                appearance={{
+                    elements: {
+                        userButtonAvatarBox: {
+                            width: '48px',  // Szerokość ikony
+                            height: '48px', // Wysokość ikony
+                        },
+                    },
+                }}
+            />
+            {/* Nazwa użytkownika */}
+            {user && (
+                <p style={{ marginTop: '8px', fontSize: '16px', fontWeight: 'bold' }}>
+                    Hej, {user.fullName || user.username || 'Unknown User'}👏
+                </p>
+            )}
               </SignedIn>
             </center>
             {loggedInLinks.map((item) => (

@@ -51,7 +51,17 @@ export default function MyApp({ Component, pageProps }) {
     return (
         <ClerkProvider publishableKey={publishableKey}>
             <MantineProvider
+
+            
                 theme={{
+                    globalStyles: (theme) => ({
+                        body: {
+                            margin: 0,
+                            padding: 0,
+                            minHeight: '100vh',
+                            background: 'radial-gradient(closest-side, #F2ECEA 20%, #FFFFFF 80%)',
+                        },
+                    }),
                     colorScheme: 'light',
                     colors: {
                         violet: ['#D9D9D9', '#BE8DFF'], // violet shades
