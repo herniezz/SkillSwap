@@ -1,7 +1,7 @@
-// server.js
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const crypto = require('crypto'); // For webhook signature validation
 const pool = require('./utils/db'); // PostgreSQL pool
 const { S3Client, PutObjectCommand } = require('@aws-sdk/client-s3');
 const { getSignedUrl } = require('@aws-sdk/s3-request-presigner');
@@ -46,14 +46,62 @@ const s3Client = new S3Client({
     },
 });
 
+// Function to validate the Clerk webhook signature
+function validateWebhook(req) {
+    const signature = req.headers['clerk-signature'];
+    const payload = JSON.stringify(req.body);
+    const secret = process.env.CLERK_WEBHOOK_SECRET; // Set this in your .env file
+
+    const hash = crypto
+        .createHmac('sha256', secret)
+        .update(payload)
+        .digest('base64');
+
+    return signature === hash;
+}
+
+// Webhook route for Clerk
+app.post('/webhooks/clerk', async (req, res) => {
+    const event = req.body;
+
+    // Validate the webhook signature
+    if (!validateWebhook(req)) {
+        return res.status(401).send('Invalid webhook signature');
+    }
+
+    // Handle specific events
+    if (event.type === 'user.created') {
+        const user = event.data;
+        const query = `
+            INSERT INTO users (name, email, avatar, clerk_user_id)
+            VALUES ($1, $2, $3, $4)
+            ON CONFLICT (clerk_user_id)
+            DO UPDATE SET name = EXCLUDED.name, email = EXCLUDED.email, avatar = EXCLUDED.avatar;
+        `;
+
+        try {
+            await pool.query(query, [
+                `${user.firstName} ${user.lastName}`, // Full name
+                user.emailAddresses[0].emailAddress, // Primary email
+                user.profileImageUrl,                // Avatar URL
+                user.id                              // Clerk user ID
+            ]);
+            res.status(200).send('User added/updated');
+        } catch (err) {
+            console.error('Database error:', err);
+            res.status(500).send('Error processing webhook');
+        }
+    } else {
+        res.status(200).send('Event ignored');
+    }
+});
+
 // Default route
 app.get('/', (req, res) => {
     res.send('SkillSwap Backend is running successfully!');
 });
 
-// ─────────────────────────────────────────────────────────────────────────
 // DB TEST ROUTE
-// ─────────────────────────────────────────────────────────────────────────
 app.get('/api/test-db', async (req, res) => {
     try {
         const result = await pool.query('SELECT NOW() as current_time');
@@ -84,7 +132,6 @@ app.post('/api/images/sign', clerkMiddleware(), async (req, res) => {
         return res.status(400).json({ error: 'fileName or fileType is missing' });
     }
 
-    // Generate a unique filename using the Clerk user ID
     const uniqueFileName = `${clerkUserId}/${Date.now()}-${fileName}`;
 
     const params = {
@@ -100,14 +147,12 @@ app.post('/api/images/sign', clerkMiddleware(), async (req, res) => {
 
         const fileUrl = `https://${process.env.S3_BUCKET}.s3.${process.env.AWS_REGION}.amazonaws.com/${uniqueFileName}`;
 
-        // Respond to the client before the database operation
         res.json({ signedUrl, url: fileUrl });
 
-        // Save file URL to the database
         const query = `
-      INSERT INTO user_files (clerk_user_id, file_url)
-      VALUES ($1, $2)
-    `;
+            INSERT INTO user_files (clerk_user_id, file_url)
+            VALUES ($1, $2)
+        `;
         await pool.query(query, [clerkUserId, fileUrl]);
     } catch (error) {
         console.error('Error generating signed URL or saving to database:', error);
@@ -115,35 +160,6 @@ app.post('/api/images/sign', clerkMiddleware(), async (req, res) => {
             res.status(500).json({ error: 'Could not generate signed URL or save file info' });
         }
     }
-});
-
-// Route to register or update a user after Clerk authentication
-app.post('/api/users/register', clerkMiddleware(), async (req, res) => {
-    const { userId, firstName, lastName, emailAddresses, profileImageUrl } = req.auth || {};
-    const name = `${firstName || ''} ${lastName || ''}`.trim();
-    const email = emailAddresses && emailAddresses.length > 0 ? emailAddresses[0].emailAddress : null;
-
-    if (!userId || !email) {
-        return res.status(400).json({ error: 'Missing user information' });
-    }
-
-    const query = `
-    INSERT INTO users (name, email, avatar, clerk_user_id)
-    VALUES ($1, $2, $3, $4)
-    ON CONFLICT (clerk_user_id) DO NOTHING;
-  `;
-    try {
-        await pool.query(query, [name, email, profileImageUrl, userId]);
-        res.status(200).json({ message: 'User registered or already exists' });
-    } catch (err) {
-        console.error('Database error:', err);
-        res.status(500).json({ error: 'Failed to register user' });
-    }
-});
-
-// Secure route example
-app.get('/api/secure', clerkMiddleware(), (req, res) => {
-    res.json({ message: 'This is a secure route.', userId: req.auth.userId });
 });
 
 // Start the server
