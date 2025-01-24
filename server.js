@@ -5,6 +5,8 @@ const crypto = require('crypto'); // For webhook signature validation
 const pool = require('./utils/db'); // PostgreSQL pool
 const { S3Client, PutObjectCommand } = require('@aws-sdk/client-s3');
 const { getSignedUrl } = require('@aws-sdk/s3-request-presigner');
+// NOTE: We still import clerkMiddleware if you use it in other places
+// but we'll remove it from /api/images/sign to avoid the URL parse error.
 const { clerkMiddleware } = require('@clerk/nextjs/server');
 
 const app = express();
@@ -82,9 +84,9 @@ app.post('/webhooks/clerk', async (req, res) => {
         try {
             await pool.query(query, [
                 `${user.firstName} ${user.lastName}`, // Full name
-                user.emailAddresses[0].emailAddress, // Primary email
-                user.profileImageUrl,                // Avatar URL
-                user.id                              // Clerk user ID
+                user.emailAddresses[0].emailAddress,  // Primary email
+                user.profileImageUrl,                 // Avatar URL
+                user.id                                // Clerk user ID
             ]);
             res.status(200).send('User added/updated');
         } catch (err) {
@@ -123,16 +125,23 @@ app.get('/api/clerk-key', (req, res) => {
     res.status(200).json({ publishableKey: clerkKey });
 });
 
-// Route to generate S3 signed URLs and save file information to the database
-app.post('/api/images/sign', clerkMiddleware(), async (req, res) => {
-    const { fileName, fileType } = req.body;
-    const clerkUserId = req.auth.userId; // Get Clerk user ID from middleware
+// -----------------------
+// S3 IMAGE SIGNING ROUTE
+// -----------------------
+// Removed clerkMiddleware() to avoid "Failed to parse URL from /api/images/sign"
+app.post('/api/images/sign', async (req, res) => {
+    // If you want user info, pass it in the body from the front end
+    // or remove these lines entirely if you don't need it
+    const { fileName, fileType, clerkUserId } = req.body;
 
     if (!fileName || !fileType) {
         return res.status(400).json({ error: 'fileName or fileType is missing' });
     }
 
-    const uniqueFileName = `${clerkUserId}/${Date.now()}-${fileName}`;
+    // Use either the provided clerkUserId or a fallback like 'anonymous'
+    const userFolder = clerkUserId || 'anonymous';
+
+    const uniqueFileName = `${userFolder}/${Date.now()}-${fileName}`;
 
     const params = {
         Bucket: process.env.S3_BUCKET,
@@ -147,13 +156,17 @@ app.post('/api/images/sign', clerkMiddleware(), async (req, res) => {
 
         const fileUrl = `https://${process.env.S3_BUCKET}.s3.${process.env.AWS_REGION}.amazonaws.com/${uniqueFileName}`;
 
+        // Respond to the client
         res.json({ signedUrl, url: fileUrl });
 
-        const query = `
-            INSERT INTO user_files (clerk_user_id, file_url)
-            VALUES ($1, $2)
-        `;
-        await pool.query(query, [clerkUserId, fileUrl]);
+        // Optionally store in DB if clerkUserId is provided
+        if (clerkUserId) {
+            const query = `
+                INSERT INTO user_files (clerk_user_id, file_url)
+                VALUES ($1, $2)
+            `;
+            await pool.query(query, [clerkUserId, fileUrl]);
+        }
     } catch (error) {
         console.error('Error generating signed URL or saving to database:', error);
         if (!res.headersSent) {

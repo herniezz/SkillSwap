@@ -19,10 +19,10 @@ export default function Sidebar() {
   const { isLoaded, user } = useUser();
 
   const loggedInLinks = [
-    { label: "Strona główna", icon: IconHome, link: "https://herniezz.github.io/SkillSwap/" },
+    { label: "Strona główna", icon: IconHome, link: "https://herniezz.github.io/SkillSwap/profiles/userChoices" },
     { label: "Znajomi", icon: IconUsers, link: "https://herniezz.github.io/SkillSwap/ProposedProfiles" },
     { label: "Ulubione", icon: IconStar, link: "https://herniezz.github.io/SkillSwap/favorites" },
-    { label: "Profil", icon: IconUser, link: "https://herniezz.github.io/SkillSwap/profiles/userChoices" },
+    { label: "Profil", icon: IconUser, link: "https://herniezz.github.io/SkillSwap/Profile" },
     { label: "Wiadomości", icon: IconMessage, link: "https://herniezz.github.io/SkillSwap/messages" },
     { label: "Ustawienia", icon: IconSettings, action: openUserProfile }, // otwiera panel zarządzania
     { label: "Support", icon: IconHelp, link: "https://herniezz.github.io/SkillSwap/support" },

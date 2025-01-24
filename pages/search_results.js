@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { TextInput, Card, Title, Badge, Group } from '@mantine/core';
-import skillsData from '../data/page_structure.json'; // path to your JSON
+import skillsData from '../data/page_structure.json'; // path to json
 
 export default function SearchSkills() {
     const [searchQuery, setSearchQuery] = useState('');

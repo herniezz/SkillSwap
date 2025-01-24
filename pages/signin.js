@@ -1,5 +1,7 @@
-import { SignIn } from '@clerk/nextjs'
+import { SignIn } from '@clerk/nextjs';
 
-export default function Page() {
-  return <center> <SignIn routing='hash' /></center>
+export default function SignInPage() {
+  return (
+      <SignIn redirectUrl="https://herniezz.github.io/SkillSwap/" />
+  );
 }
